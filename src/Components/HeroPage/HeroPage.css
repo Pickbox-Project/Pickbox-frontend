@@ -9,7 +9,7 @@
 }
 
 .heropage-text {
-    margin-top: 110px;
+    margin-top: 130px;
 }
 
 @media (min-width: 990px) {
@@ -39,4 +39,13 @@
     .heropage-details {
         flex-direction: column;
     }
+}
+
+.heropage-download {
+    margin-top: 30px;
+}
+
+.heropage-download>img {
+    width: 130px;
+    margin: 0px 20px 0px 0px;
 }
