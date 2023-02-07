@@ -10,6 +10,7 @@ const HeroPage = () => {
                 <span>DOORSTEPS, </span> we will <br/>
                 handle the delivery.               
                 </h2>
+                <h5>Say goodbye to your logistics struggle. Pickbox is here <br/> to relieve you from all your logistics nightmare as we <br/>offer you reliable market to doorstep delivery.</h5>
             </div>
         </div>
     </div>
