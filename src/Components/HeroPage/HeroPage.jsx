@@ -1,5 +1,6 @@
 import React from 'react'
 import "./HeroPage.css"
+import heropageImage from "../../Assets/images/heropage-Image.png"
 
 const HeroPage = () => {
   return (
@@ -11,6 +12,9 @@ const HeroPage = () => {
                 handle the delivery.               
                 </h2>
                 <h5>Say goodbye to your logistics struggle. Pickbox is here <br/> to relieve you from all your logistics nightmare as we <br/>offer you reliable market to doorstep delivery.</h5>
+            </div>
+            <div className='heropage-image'>
+                <img src={heropageImage} alt="" />
             </div>
         </div>
     </div>
