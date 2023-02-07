@@ -18,7 +18,7 @@
     color: #d45500;
 }
 
-@media(min-width: 768px){
+@media(min-width: 990px){
     .pickbox-logo {
         margin-right: 50%;
     }
