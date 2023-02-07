@@ -3,7 +3,9 @@ import "./HeroPage.css"
 
 const HeroPage = () => {
   return (
-    <div>HeroPage</div>
+    <div className='heropage-container'>
+        
+    </div>
   )
 }
 
