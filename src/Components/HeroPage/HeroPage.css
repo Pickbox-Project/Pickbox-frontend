@@ -18,6 +18,13 @@
     font-family: "Oswald", sans-serif;
     font-weight: 700;
 }
-.heropage-text>h2>span{
-    color: #FF6600;
+
+.heropage-text>h2>span {
+    color: #ff6600;
+}
+
+.heropage-text>h5 {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
 }
