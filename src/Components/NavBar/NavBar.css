@@ -1,0 +1,35 @@
+.navbar-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 2px 2px #d45500;
+}
+
+.nav-list>ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list>ul>li {
+    list-style: none;
+    margin-left: 30px;
+    color: #d45500;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #d45500;
+}
+
+@media (min-width: 990px) {
+    .pickbox-logo {
+        margin-right: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-list>ul {
+        display: none;
+    }
+}
