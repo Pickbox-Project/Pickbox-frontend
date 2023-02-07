@@ -1,12 +1,9 @@
 .navbar-container {
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
-.pickbox-logo {
-    margin-right: 50%;
-}
 
 .nav-list>ul {
     display: flex;
@@ -17,4 +14,15 @@
     list-style: none;
     margin-left: 30px;
     color: #d45500;
+}
+
+@media(min-width: 768px){
+    .pickbox-logo {
+        margin-right: 50%;
+    }
+}
+@media(max-width: 600px){
+    .nav-list>ul{
+        display: none;
+    }
 }
