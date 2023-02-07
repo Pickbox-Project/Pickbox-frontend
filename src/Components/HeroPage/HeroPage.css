@@ -12,6 +12,12 @@
     margin-top: 110px;
 }
 
+@media (min-width: 990px) {
+    .heropage-text {
+        margin-right: 16%;
+    }
+}
+
 .heropage-text>h2 {
     font-size: 40px;
     font-family: "Oswald", sans-serif;
