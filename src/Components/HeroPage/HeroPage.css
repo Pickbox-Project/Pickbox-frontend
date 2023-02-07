@@ -1,0 +1,42 @@
+.heropage-container {
+    background: url("../../Assets/images/Hero\ section\ background.png");
+    height: 598px;
+}
+
+.heropage-details {
+    display: flex;
+    justify-content: center;
+}
+
+.heropage-text {
+    margin-top: 110px;
+}
+
+@media (min-width: 990px) {
+    .heropage-text {
+        margin-right: 16%;
+    }
+}
+
+.heropage-text>h2 {
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.heropage-text>h2>span {
+    color: #ff6600;
+}
+
+.heropage-text>h5 {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+@media (max-width: 992px) {
+    .heropage-details {
+        flex-direction: column;
+    }
+}

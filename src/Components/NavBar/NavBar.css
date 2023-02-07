@@ -25,6 +25,7 @@
 @media (min-width: 990px) {
     .pickbox-logo {
         margin-right: 50%;
+        margin-left: 30px;
     }
 }
 
