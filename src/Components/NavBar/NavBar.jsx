@@ -8,6 +8,15 @@ const NavBar = () => {
         <div className='pickbox-logo'>
             <img src={pickboxLogo} alt="Pickbox Logo" />
         </div>
+        <div className='nav-list'>
+            <ul>
+                <li>Home</li>
+                <li>Tracking</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+
+        </div>
     </div>
   )
 }
