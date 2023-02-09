@@ -3,6 +3,7 @@ import "./Steps.css";
 import stepsVector from "../../Assets/images/steps-vector.png";
 import bookDeliveryIcon from "../../Assets/images/book-delivery-icon.png"
 import localShippingIcon from "../../Assets/images/local_shipping-icon.png"
+import deliveryIcon from "../../Assets/images/delivery-icon.png"
 import lineVector from "../../Assets/images/line-vector.png"
 
 const Steps = () => {
@@ -39,6 +40,21 @@ const Steps = () => {
                    choice place
                 </h5>
                 <p>We will be right at your place <br/> of choice to pick your booked <br/>order(s).</p>
+
+            </div>
+        </div>
+
+        <div className="other-steps-card delivery">
+            <img src={lineVector} alt="line-vector" className="line-vector" />
+            <div className="card-icon">
+                <img src={deliveryIcon} alt="Book Delivery Icon" />
+            </div>
+            <div className="card-text">
+                <h5 className="card-title">
+                   Delivery at <br/>
+                   doorsteps
+                </h5>
+                <p>Hassle free doorstep delivery <br/> at your your place of choice.</p>
 
             </div>
         </div>
