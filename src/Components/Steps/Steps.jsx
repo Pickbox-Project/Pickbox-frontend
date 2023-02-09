@@ -4,6 +4,7 @@ import stepsVector from "../../Assets/images/steps-vector.png";
 import bookDeliveryIcon from "../../Assets/images/book-delivery-icon.png"
 import localShippingIcon from "../../Assets/images/local_shipping-icon.png"
 import deliveryIcon from "../../Assets/images/delivery-icon.png"
+import successImage from "../../Assets/images/success.png"
 import lineVector from "../../Assets/images/line-vector.png"
 
 const Steps = () => {
@@ -57,6 +58,9 @@ const Steps = () => {
                 <p>Hassle free doorstep delivery <br/> at your your place of choice.</p>
 
             </div>
+        </div>
+        <div className="other-steps-card success">
+            <img src={successImage} alt="Success Icon" />
         </div>
       </div>
     </div>
