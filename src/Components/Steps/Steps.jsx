@@ -44,7 +44,7 @@ const Steps = () => {
             </div>
         </div>
 
-        <div className="other-steps-card delivery">
+        <div className="other-steps-card">
             <img src={lineVector} alt="line-vector" className="line-vector" />
             <div className="card-icon">
                 <img src={deliveryIcon} alt="Book Delivery Icon" />
