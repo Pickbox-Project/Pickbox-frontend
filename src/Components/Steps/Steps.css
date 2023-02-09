@@ -19,6 +19,10 @@
     width: 140px;
 }
 
+.steps-details {
+    margin-top: 40px;
+}
+
 .first-steps-card {
     background: rgba(255, 204, 170, 0.2);
     width: 230px;
