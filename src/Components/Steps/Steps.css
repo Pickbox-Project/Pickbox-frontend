@@ -34,6 +34,12 @@
     position: relative;
 }
 
+.line-vector {
+    position: absolute;
+    left: 230px;
+    top: 60%;
+}
+
 .card-icon {
     width: 60px;
     height: 60px;

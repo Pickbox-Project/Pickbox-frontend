@@ -2,6 +2,7 @@ import React from "react";
 import "./Steps.css";
 import stepsVector from "../../Assets/images/steps-vector.png";
 import bookDeliveryIcon from "../../Assets/images/book-delivery-icon.png"
+import lineVector from "../../Assets/images/line-vector.png"
 
 const Steps = () => {
   return (
@@ -14,6 +15,7 @@ const Steps = () => {
       </div>
       <div className="steps-details">
         <div className="first-steps-card">
+            <img src={lineVector} alt="line-vector" className="line-vector" />
             <div className="card-icon">
                 <img src={bookDeliveryIcon} alt="Book Delivery Icon" />
             </div>
