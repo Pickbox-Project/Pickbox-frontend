@@ -27,6 +27,19 @@ const Steps = () => {
 
             </div>
         </div>
+        <div className="other-steps-card">
+            <img src={lineVector} alt="line-vector" className="line-vector" />
+            <div className="card-icon">
+                <img src={bookDeliveryIcon} alt="Book Delivery Icon" />
+            </div>
+            <div className="card-text">
+                <h5 className="card-title">
+                    Book a delivery
+                </h5>
+                <p>Place an order(s) from your <br/> place of comfort.</p>
+
+            </div>
+        </div>
       </div>
     </div>
   );
