@@ -5,6 +5,7 @@
 .steps-details {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 70px;
 }
 
@@ -107,6 +108,16 @@
 
 .other-steps-card:nth-child(3) {
     margin-top: 100px;
+}
+
+.other-steps-card:nth-child(4) {
+    margin-top: 150px;
+}
+
+.other-steps-card:nth-child(4)>img {
+    width: 160px;
+    display: block;
+    margin: auto;
 }
 
 @media (max-width: 800px) {
