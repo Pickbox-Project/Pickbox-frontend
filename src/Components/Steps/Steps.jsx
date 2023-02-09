@@ -13,9 +13,16 @@ const Steps = () => {
         <img src={stepsVector} alt="" />
       </div>
       <div className="steps-details">
-        <div className="steps-card">
+        <div className="first-steps-card">
             <div className="card-icon">
                 <img src={bookDeliveryIcon} alt="Book Delivery Icon" />
+            </div>
+            <div className="card-text">
+                <h5 className="card-title">
+                    Book a delivery
+                </h5>
+                <p>Place an order(s) from your <br/> place of comfort.</p>
+
             </div>
         </div>
       </div>
