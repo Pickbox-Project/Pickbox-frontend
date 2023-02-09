@@ -2,6 +2,7 @@ import React from "react";
 import "./Steps.css";
 import stepsVector from "../../Assets/images/steps-vector.png";
 import bookDeliveryIcon from "../../Assets/images/book-delivery-icon.png"
+import localShippingIcon from "../../Assets/images/local_shipping-icon.png"
 import lineVector from "../../Assets/images/line-vector.png"
 
 const Steps = () => {
@@ -30,13 +31,14 @@ const Steps = () => {
         <div className="other-steps-card">
             <img src={lineVector} alt="line-vector" className="line-vector" />
             <div className="card-icon">
-                <img src={bookDeliveryIcon} alt="Book Delivery Icon" />
+                <img src={localShippingIcon} alt="Book Delivery Icon" />
             </div>
             <div className="card-text">
                 <h5 className="card-title">
-                    Book a delivery
+                   Pick-up at your <br/>
+                   choice place
                 </h5>
-                <p>Place an order(s) from your <br/> place of comfort.</p>
+                <p>We will be right at your place <br/> of choice to pick your booked <br/>order(s).</p>
 
             </div>
         </div>

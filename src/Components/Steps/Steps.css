@@ -54,14 +54,14 @@
     margin-top: 10px;
 }
 
-.card-icon>img {
+.first-steps-card>.card-icon>img {
     width: 25px;
     margin: auto;
     display: block;
     padding: 9px 0px 9px 0px;
 }
 
-.card-text {
+.first-steps-card>.card-text {
     margin-top: 40px;
 }
 
@@ -71,7 +71,7 @@
     font-weight: 500;
 }
 
-.card-text>p {
+.first-steps-card>.card-text>p {
     margin-top: 13px;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -88,6 +88,21 @@
     padding: 15px;
     position: relative;
     margin-top: 50px;
+}
+
+.other-steps-card>.card-icon>img {
+    width: 40px;
+    margin: auto;
+    display: block;
+    padding: 13px 0px 13px 0px;
+}
+
+.other-steps-card>.card-text>p {
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #5b5a5f;
 }
 
 @media (max-width: 800px) {
