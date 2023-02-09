@@ -20,8 +20,8 @@ const HeroPage = () => {
             offer you reliable market to doorstep delivery.
           </h5>
           <div className="heropage-download">
+          <img src={appleDownload} alt="" />
             <img src={androidDownload} alt="" />
-            <img src={appleDownload} alt="" />
         </div>
         </div>
         <div className="heropage-image">

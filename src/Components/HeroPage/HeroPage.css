@@ -39,6 +39,12 @@
     .heropage-details {
         flex-direction: column;
     }
+    .heropage-image {
+        display: none;
+    }
+    .heropage-text {
+        margin-left: 20px;
+    }
 }
 
 .heropage-download {
@@ -46,6 +52,6 @@
 }
 
 .heropage-download>img {
-    width: 130px;
+    width: 150px;
     margin: 0px 20px 0px 0px;
 }
