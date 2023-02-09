@@ -11,6 +11,11 @@ const Steps = () => {
         </h4>
         <img src={stepsVector} alt="" />
       </div>
+      <div className="steps-details">
+        <div className="steps-card">
+            
+        </div>
+      </div>
     </div>
   );
 };
