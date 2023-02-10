@@ -13,7 +13,19 @@ const Footer = () => {
         <div className="footer-navigation">
             <h5 className="footer-title">Navigation</h5>
             <ul className="navigation-links">
-                <li></li>
+                <li>Home</li>
+                <li>Tracking</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div className="footer-navigation">
+            <h5 className="footer-title">Links</h5>
+            <ul className="navigation-links">
+                <li>FAQ</li>
+                <li>Customer Support</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
             </ul>
         </div>
       </div>
