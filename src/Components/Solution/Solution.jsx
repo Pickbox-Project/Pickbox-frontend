@@ -8,6 +8,9 @@ const Solution = () => {
     <div className='solution-container'>
         <img src={leftVector} alt=""  className='vector-left'/>
         <img src={rightVector} alt="" className='vector-right'/>
+        <div className='solution-details'>
+            <h3 className='solution-text'>We Offer Solutions To Logistics Barriers</h3>
+        </div>
     </div>
   )
 }
