@@ -23,8 +23,10 @@
 .navigation-links li {
     list-style: none;
     margin: 10px 0px 10px 0px;
+    font-family: "DM Sans", sans-serif;
 }
 
 .footer-title {
     font-size: 18px;
+    font-family: "DM Sans", sans-serif;
 }
