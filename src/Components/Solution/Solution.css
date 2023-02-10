@@ -50,6 +50,18 @@
     border-radius: 20px 20px 50px 50px;
     height: 230px;
 }
-.solution-card-title{
+
+.solution-card-title {
     text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: #ff6600;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.solution-card-details {
+    text-align: center;
+    font-family: "DM Sans";
 }
