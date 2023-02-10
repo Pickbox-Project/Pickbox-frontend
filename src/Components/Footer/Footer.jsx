@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-details">
         <div className="footer-logo-text">
             <img src={pickBoxLogo} alt="Pickbox Logo" />
-            <p>Pickbox logistics is eradicating logistics hassle by providing swift and affordable market to door-step delivery services.</p>
+            <p className="footer-text">Pickbox logistics is eradicating logistics hassle by providing swift and affordable market to door-step delivery services.</p>
         </div>
         <div className="footer-navigation">
             <h5 className="footer-title">Navigation</h5>
