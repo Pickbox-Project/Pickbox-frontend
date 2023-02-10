@@ -13,8 +13,18 @@
 
 .footer-logo-text {
     width: 15%;
+    font-family: "DM Sans", sans-serif;
 }
 
 .footer-text {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.navigation-links li {
+    list-style: none;
+    margin: 10px 0px 10px 0px;
+}
+
+.footer-title {
+    font-size: 18px;
 }
