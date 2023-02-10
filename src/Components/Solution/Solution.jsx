@@ -3,7 +3,9 @@ import "./Solution.css"
 
 const Solution = () => {
   return (
-    <div>Solution</div>
+    <div className='solution-container'>
+
+    </div>
   )
 }
 
