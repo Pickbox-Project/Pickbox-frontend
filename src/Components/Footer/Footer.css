@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .footer-logo-text {
@@ -29,4 +30,10 @@
 .footer-title {
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
+}
+
+.footer-hr {
+    border: 1px solid rgba(18, 18, 18, 0.1);
+    margin: 20px auto 20px auto;
+    width: 90%;
 }

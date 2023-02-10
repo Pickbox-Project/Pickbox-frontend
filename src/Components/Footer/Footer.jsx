@@ -5,6 +5,7 @@ import pickBoxLogo from "../../Assets/images/pickbox-logo.png"
 const Footer = () => {
   return (
     <div className="footer-container">
+        <hr className="footer-hr"/>
       <div className="footer-details">
         <div className="footer-logo-text">
             <img src={pickBoxLogo} alt="Pickbox Logo" />
@@ -32,6 +33,8 @@ const Footer = () => {
         <h5 className="footer-title">Connect with us</h5>
         </div>
       </div>
+      <hr className="footer-hr"/>
+      <p className="footer-copyright">Copyright {new Date().getFullYear()} reserved @ Pickbox logistics</p>
     </div>
   );
 };
