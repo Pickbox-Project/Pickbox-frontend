@@ -41,3 +41,13 @@
 .footer-copyright {
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .footer-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-logo-text {
+        width: 100%;
+    }
+}
