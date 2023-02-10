@@ -19,6 +19,13 @@ const Solution = () => {
                     <h5 className='solution-card-title'>Convenient</h5>
                     <p className='solution-card-details'>Your convenience is<br/> our top priority.</p>
                 </div>
+                <div className='solution-card'>
+                    <div className='solution-illustration'>
+                        <img src={convenientIllustration} alt="Convenient Illustration" />
+                    </div>
+                    <h5 className='solution-card-title'>Convenient</h5>
+                    <p className='solution-card-details'>Your convenience is<br/> our top priority.</p>
+                </div>
                 
             </div>
         </div>
