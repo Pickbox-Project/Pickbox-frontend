@@ -1,0 +1,68 @@
+.solution-container {
+    padding: 20px;
+}
+
+.vector-left {
+    position: absolute;
+    left: 0;
+}
+
+.vector-right {
+    right: 0;
+    position: absolute;
+}
+
+.solution-text {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.solutions-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.solution-card {
+    width: 230px;
+    height: 350px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 8px rgba(255, 102, 0, 0.05);
+    border-radius: 20px;
+}
+
+.solution-illustration>img {
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding-top: 35px;
+}
+
+.solution-illustration {
+    background: rgba(255, 102, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 20px 20px 50px 50px;
+    height: 230px;
+}
+
+.solution-card-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: #ff6600;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.solution-card-details {
+    text-align: center;
+    font-family: "DM Sans";
+}
