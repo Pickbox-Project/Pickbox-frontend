@@ -1,0 +1,43 @@
+.footer-container {
+    padding: 50px;
+    background: url("../../Assets/images/Footer-background.png");
+}
+
+.footer-details {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.footer-logo-text {
+    width: 15%;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-text {
+    margin-top: 20px;
+}
+
+.navigation-links li {
+    list-style: none;
+    margin: 10px 0px 10px 0px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-hr {
+    border: 1px solid rgba(18, 18, 18, 0.1);
+    margin: 20px auto 20px auto;
+    width: 90%;
+}
+
+.footer-copyright {
+    text-align: center;
+}
