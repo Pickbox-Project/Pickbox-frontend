@@ -6,8 +6,8 @@ import "./Solution.css"
 const Solution = () => {
   return (
     <div className='solution-container'>
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src={leftVector} alt=""  className='vector-left'/>
+        <img src={rightVector} alt="" className='vector-right'/>
     </div>
   )
 }

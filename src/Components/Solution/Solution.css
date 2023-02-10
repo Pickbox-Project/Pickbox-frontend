@@ -1,3 +1,13 @@
 .solution-container {
-    padding: 50px;
+    padding: 20px;
+}
+
+.vector-left {
+    position: absolute;
+    left: 0;
+}
+
+.vector-right {
+    right: 0;
+    position: absolute;
 }
