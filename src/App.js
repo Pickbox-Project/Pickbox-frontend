@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import HeroPage from './Components/HeroPage/HeroPage';
 import Steps from './Components/Steps/Steps';
 import Solution from './Components/Solution/Solution';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <HeroPage/>
             <Steps/>
             <Solution/>
+            <Footer/>
            </div>}/>
         </Routes>
       </Router>
