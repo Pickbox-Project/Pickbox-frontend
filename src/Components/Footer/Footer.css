@@ -2,3 +2,9 @@
     padding: 50px;
     background: url("../../Assets/images/Footer-background.png");
 }
+.footer-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
