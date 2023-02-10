@@ -2,9 +2,15 @@
     padding: 50px;
     background: url("../../Assets/images/Footer-background.png");
 }
-.footer-details{
+
+.footer-details {
     display: flex;
+    gap: 200px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+}
+
+.footer-logo-text {
+    width: 15%;
 }
