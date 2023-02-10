@@ -5,11 +5,13 @@
 .vector-left {
     position: absolute;
     left: 0;
+    width: 150px;
 }
 
 .vector-right {
     right: 0;
     position: absolute;
+    width: 150px;
 }
 
 .solution-text {
@@ -17,7 +19,7 @@
     font-family: "Oswald", sans-serif;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .solutions-cards {
