@@ -28,6 +28,9 @@ const Footer = () => {
                 <li>Terms and Conditions</li>
             </ul>
         </div>
+        <div className="footer-connect">
+        <h5 className="footer-title">Connect with us</h5>
+        </div>
       </div>
     </div>
   );
