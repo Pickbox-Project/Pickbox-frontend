@@ -1,4 +1,6 @@
 import React from 'react'
+import leftVector from "../../Assets/images/vector left.png"
+import rightVector from "../../Assets/images/vector right.png"
 import "./Solution.css"
 
 const Solution = () => {
