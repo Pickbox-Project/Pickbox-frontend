@@ -14,11 +14,11 @@ function getItem(label, key, children, type) {
 
 const items = [
   getItem("How do I Register?", "sub1", [
-    getItem("Kindly Register from our App from PlayStore", "1"),
+    getItem("Testing", "1"),
   ]),
   getItem("How do I Download Pickbox App?", "sub2", [
     getItem(
-      "Pickbox App is currently available on both Apple Store and Play Store",
+      "Testing",
       "2"
     ),
   ]),
