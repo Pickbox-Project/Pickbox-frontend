@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 import pickBoxLogo from "../../Assets/images/pickbox-logo.png"
 
 const Footer = () => {
@@ -14,8 +15,8 @@ const Footer = () => {
         <div className="footer-navigation">
             <h5 className="footer-title">Navigation</h5>
             <ul className="navigation-links">
-                <li>Home</li>
-                <li>Tracking</li>
+                <li><NavLink to="/"> Home</NavLink></li>
+                <li><NavLink to="/tracking"> Tracking </NavLink></li>
                 <li>About Us</li>
                 <li>Contact Us</li>
             </ul>
