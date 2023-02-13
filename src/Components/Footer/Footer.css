@@ -27,6 +27,11 @@
     font-family: "DM Sans", sans-serif;
 }
 
+.navigation-links a {
+    text-decoration: none;
+    color: #000;
+}
+
 .footer-title {
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
