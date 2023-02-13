@@ -2,6 +2,7 @@ import React from "react";
 import { Menu } from "antd";
 import "./Faqs.css";
 import { useState } from "react";
+import ContactUs from "../ContactUs/ContactUs";
 
 function getItem(label, key, children, type) {
   return {
@@ -46,6 +47,7 @@ const Faqs = () => {
           items={items}
         ></Menu>
       </div>
+      <ContactUs/>
     </div>
   );
 };
