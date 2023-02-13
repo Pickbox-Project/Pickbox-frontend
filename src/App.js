@@ -16,9 +16,9 @@ function App() {
             <HeroPage/>
             <Steps/>
             <Solution/>
-            <Footer/>
            </div>}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
