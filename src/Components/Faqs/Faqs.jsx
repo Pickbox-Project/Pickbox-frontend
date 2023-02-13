@@ -11,9 +11,10 @@ function getItem(label, key, children, type) {
     type,
   };
 }
+
 const items = [
-  getItem("How do I...", "sub1", [getItem("Option", "1")]),
-  getItem("How do I...", "sub2", [getItem("Option", "2")]),
+  getItem("How do I...?", "sub1", [getItem("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti beatae, harum deleniti ducimus sunt corporis dolorum deserunt iusto animi sequi soluta doloribus est repellat commodi atque reprehenderit rem dicta. Minima.", "1")]),
+  getItem("How do I...?", "sub2", [getItem("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti beatae, harum deleniti ducimus sunt corporis dolorum deserunt iusto animi sequi soluta doloribus est repellat commodi atque reprehenderit rem dicta. Minima.", "2")]),
 ];
 const rootSubmenuKeys = ["sub1", "sub2"];
 const Faqs = () => {
