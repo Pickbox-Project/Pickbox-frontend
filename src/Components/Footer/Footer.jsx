@@ -17,8 +17,8 @@ const Footer = () => {
             <ul className="navigation-links">
                 <li><NavLink to="/"> Home</NavLink></li>
                 <li><NavLink to="/tracking"> Tracking </NavLink></li>
-                <li>About Us</li>
-                <li>Contact Us</li>
+                <li><NavLink to="/aboutus">About Us</NavLink></li>
+                <li><NavLink to="/contactus">Contact Us</NavLink></li>
             </ul>
         </div>
         <div className="footer-navigation">
