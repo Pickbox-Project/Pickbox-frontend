@@ -4,4 +4,7 @@
     justify-content: center;
 }
 
-.faqs-container {}
+.faqs-container {
+    background: #FFF;
+    padding: 15px;
+}
