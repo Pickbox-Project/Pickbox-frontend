@@ -19,5 +19,24 @@
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 25px;
-    color: #FF6600;
+    color: #ff6600;
+    margin-bottom: 40px;
+}
+
+.ant-menu-root.ant-menu-inline {
+    border-inline-end: none !important;
+}
+
+.ant-menu .ant-menu-sub {
+    height: 60px !important;
+}
+
+.ant-menu-item {
+    height: 60px !important;
+    text-overflow: unset !important;
+    white-space: inherit !important;
+}
+
+.ant-menu-title-content {
+    text-overflow: unset !important;
 }

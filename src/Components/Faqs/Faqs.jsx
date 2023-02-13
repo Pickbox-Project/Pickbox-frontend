@@ -13,8 +13,15 @@ function getItem(label, key, children, type) {
 }
 
 const items = [
-  getItem("How do I...?", "sub1", [getItem("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti beatae, harum deleniti ducimus sunt corporis dolorum deserunt iusto animi sequi soluta doloribus est repellat commodi atque reprehenderit rem dicta. Minima.", "1")]),
-  getItem("How do I...?", "sub2", [getItem("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti beatae, harum deleniti ducimus sunt corporis dolorum deserunt iusto animi sequi soluta doloribus est repellat commodi atque reprehenderit rem dicta. Minima.", "2")]),
+  getItem("How do I Register?", "sub1", [
+    getItem("Kindly Register from our App from PlayStore", "1"),
+  ]),
+  getItem("How do I Download Pickbox App?", "sub2", [
+    getItem(
+      "Pickbox App is currently available on both Apple Store and Play Store",
+      "2"
+    ),
+  ]),
 ];
 const rootSubmenuKeys = ["sub1", "sub2"];
 const Faqs = () => {
