@@ -2,6 +2,7 @@
     padding: 50px;
     display: flex;
     justify-content: center;
+    gap: 50px;
 }
 
 .faqs-container {
