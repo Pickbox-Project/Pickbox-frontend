@@ -3,7 +3,11 @@ import "./Faqs.css"
 
 const Faqs = () => {
   return (
-    <div>Faqs</div>
+    <div className='faqs-contact-container'>
+        <div className='faqs-container'>
+            <h5>Frequently asked question</h5>
+        </div>
+    </div>
   )
 }
 
