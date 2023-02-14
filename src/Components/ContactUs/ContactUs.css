@@ -1,4 +1,4 @@
-.contact-us-container{
+.contact-us-container {
     background: #e6e6e6;
     padding: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -7,11 +7,16 @@
     width: 560px;
     height: 400px;
 }
-.contact-us-text{
+
+.contact-us-text {
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
     font-size: 25px;
     color: #ff6600;
     margin-bottom: 40px;
+}
+
+.contact-form {
+    padding: 10px;
 }
