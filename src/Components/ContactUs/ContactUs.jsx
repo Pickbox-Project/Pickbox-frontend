@@ -27,6 +27,7 @@ const ContactUs = () => {
           rows="5"
           placeholder="Write your message..."
         ></textarea>
+        <button type="submit">Send message</button>
       </form>
     </div>
   );
