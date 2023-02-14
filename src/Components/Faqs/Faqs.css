@@ -13,7 +13,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     width: 560px;
-    height: 400px;
+    height: 540px;
 }
 
 .faqs-text {
@@ -29,10 +29,19 @@
     border-inline-end: none !important;
 }
 
-
-/* .ant-menu .ant-menu-sub {
-    height: 60px !important;
+.ant-menu-submenu {
+    background: #e6e6e6 !important;
+    margin-bottom: 20px;
+    padding-top: 2px;
 }
+
+.ant-menu .ant-menu-sub {
+    background: #e6e6e6 !important;
+    border-radius: 8px !important;
+}
+
+
+/* 
 
 .ant-menu-item {
     height: 60px !important;
