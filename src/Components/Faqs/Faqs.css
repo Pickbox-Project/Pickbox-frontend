@@ -28,11 +28,15 @@
 .ant-menu-root.ant-menu-inline {
     border-inline-end: none !important;
 }
+.ant-menu-submenu{
+    background: #E6E6E6 !important;
+}
 
 
-/* .ant-menu .ant-menu-sub {
+.ant-menu .ant-menu-sub {
     height: 60px !important;
 }
+/* 
 
 .ant-menu-item {
     height: 60px !important;
