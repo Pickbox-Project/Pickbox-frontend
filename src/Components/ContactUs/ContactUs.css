@@ -53,9 +53,23 @@
     margin-top: 6px;
     padding: 15px 0px 0px 5px;
 }
-.contact-form>textarea::placeholder{
+
+.contact-form>textarea::placeholder {
     font-family: "DM Sans";
 }
-.contact-form>textarea:focus{
+
+.contact-form>textarea:focus {
     outline: none;
+}
+
+.contact-form>button {
+    background: #ff6600;
+    color: #fff;
+    display: block;
+    margin: auto;
+    padding: 15px 18px 15px 18px;
+    border: none;
+    margin-top: 20px;
+    border: 1px solid rgba(170, 68, 0, 0.5);
+    border-radius: 4px;
 }
