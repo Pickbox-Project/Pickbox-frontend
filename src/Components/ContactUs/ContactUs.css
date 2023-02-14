@@ -18,11 +18,20 @@
 }
 
 .contact-form {
-    padding: 10px;
+    padding: 5px;
 }
 
 .contact-form>label {
     font-size: 17px;
     font-family: "DM Sans";
     font-weight: 400;
+}
+
+.contact-form>input {
+    width: 100%;
+    padding: 15px 5px 15px 5px;
+    margin-top: 5px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
