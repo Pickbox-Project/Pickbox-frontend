@@ -14,7 +14,7 @@
     font-weight: 600;
     font-size: 25px;
     color: #ff6600;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .contact-form {
@@ -29,9 +29,15 @@
 
 .contact-form>input {
     width: 100%;
-    padding: 15px 5px 15px 5px;
+    padding: 18px 5px 18px 5px;
     margin-top: 5px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    outline-offset: none;
+}
+
+.contact-form>input::placeholder {
+    font-size: 15px;
+    font-family: "DM Sans";
 }
