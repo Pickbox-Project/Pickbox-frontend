@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="footer-navigation">
             <h5 className="footer-title">Links</h5>
             <ul className="navigation-links">
-            <li><NavLink to="/tracking"> FAQ </NavLink></li>
-            <li><NavLink to="/tracking"> Customer Support </NavLink></li>
-            <li><NavLink to="/tracking"> Privacy Policy </NavLink></li>
-            <li><NavLink to="/tracking"> Terms and Conditions </NavLink></li>
+            <li><NavLink to="/contactus"> FAQ </NavLink></li>
+            <li><NavLink to="/contactus"> Customer Support </NavLink></li>
+            <li><NavLink to="/contactus"> Privacy Policy </NavLink></li>
+            <li><NavLink to="/contactus"> Terms and Conditions </NavLink></li>
             </ul>
         </div>
         <div className="footer-connect">
