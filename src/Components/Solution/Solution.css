@@ -6,21 +6,39 @@
 .vector-left {
     position: absolute;
     left: 0;
-    width: 150px;
 }
 
 .vector-right {
     right: 0;
     position: absolute;
-    width: 150px;
 }
 
 .solution-text {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-size: 40px;
     font-weight: 700;
     margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .solution-text {
+        font-size: 35px;
+    }
+    .vector-right {
+        width: 120px;
+    }
+    .vector-left {
+        width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .vector-right {
+        width: 70px;
+    }
+    .vector-left {
+        width: 70px;
+    }
 }
 
 .solutions-cards {
