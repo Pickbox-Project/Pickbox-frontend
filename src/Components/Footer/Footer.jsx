@@ -34,10 +34,10 @@ const Footer = () => {
         <div className="footer-connect">
         <h5 className="footer-title">Connect with us</h5>
         <div className="footer-icons">
-          <AiFillTwitterCircle className="icon"/>
-          <AiFillFacebook className="icon"/>
-          <AiFillInstagram className="icon"/>
-          <AiFillLinkedin className="icon"/>
+          <a href="##"><AiFillTwitterCircle className="icon"/></a>
+          <a href="##"><AiFillFacebook className="icon"/></a>
+          <a href="##"> <AiFillInstagram className="icon"/></a>
+          <a href="##"><AiFillLinkedin className="icon"/></a>
         </div>
         </div>
       </div>
