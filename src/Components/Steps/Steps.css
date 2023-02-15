@@ -6,7 +6,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 70px;
+}
+
+@media (min-width: 820px) {
+    .steps-details {
+        gap: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .steps-details {
+        gap: 10px;
+    }
 }
 
 .steps-text>h4 {
@@ -43,8 +54,21 @@
 
 .line-vector {
     position: absolute;
-    left: 230px;
-    top: 60%;
+}
+
+@media (min-width: 782px) {
+    .line-vector {
+        left: 230px;
+        top: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .line-vector {
+        left: 80px;
+        bottom: -60px;
+        transform: rotate(90deg);
+    }
 }
 
 .card-icon {
