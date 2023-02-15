@@ -47,6 +47,11 @@
     text-align: center;
 }
 
+.icon {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
 @media (max-width: 600px) {
     .footer-details {
         flex-direction: column;
