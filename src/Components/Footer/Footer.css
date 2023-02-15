@@ -53,7 +53,7 @@
     color: #000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
     .footer-details {
         flex-direction: column;
         gap: 20px;
