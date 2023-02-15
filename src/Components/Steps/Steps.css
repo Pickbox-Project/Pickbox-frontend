@@ -8,7 +8,7 @@
     flex-wrap: wrap;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) {
     .steps-details {
         gap: 70px;
     }
@@ -56,7 +56,7 @@
     position: absolute;
 }
 
-@media (min-width: 782px) {
+@media (min-width: 768px) {
     .line-vector {
         left: 230px;
         top: 60%;
@@ -130,12 +130,22 @@
     color: #5b5a5f;
 }
 
-.other-steps-card:nth-child(3) {
-    margin-top: 100px;
+@media (min-width: 820px) {
+    .other-steps-card:nth-child(3) {
+        margin-top: 100px;
+    }
+    .other-steps-card:nth-child(4) {
+        margin-top: 150px;
+    }
 }
 
-.other-steps-card:nth-child(4) {
-    margin-top: 150px;
+@media (max-width: 600px) {
+    .other-steps-card:nth-child(3) {
+        margin-top: 40px;
+    }
+    .other-steps-card:nth-child(4) {
+        margin-top: 50px;
+    }
 }
 
 .other-steps-card:nth-child(4)>img {
