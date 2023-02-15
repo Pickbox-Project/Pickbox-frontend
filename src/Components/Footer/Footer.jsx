@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { AiFillFacebook, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import pickBoxLogo from "../../Assets/images/pickbox-logo.png"
 
@@ -32,6 +33,12 @@ const Footer = () => {
         </div>
         <div className="footer-connect">
         <h5 className="footer-title">Connect with us</h5>
+        <div className="footer-icons">
+          <AiFillTwitterCircle/>
+          <AiFillFacebook/>
+          <AiFillInstagram/>
+          <AiFillLinkedin/>
+        </div>
         </div>
       </div>
       <hr className="footer-hr"/>
