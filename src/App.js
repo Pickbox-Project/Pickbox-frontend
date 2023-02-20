@@ -6,6 +6,7 @@ import Steps from './Components/Steps/Steps';
 import Solution from './Components/Solution/Solution';
 import Footer from './Components/Footer/Footer';
 import Faqs from './Components/Faqs/Faqs';
+import Tracking from './Components/Tracking/Tracking'
 
 function App() {
   return (
@@ -18,13 +19,11 @@ function App() {
             <Steps/>
             <Solution/>
            </div>}/>
-           <Route exact path='/contactus' element={
-            <div>
+           <Route exact path="/contactus" element={
               <Faqs/>
-            </div>
            }>
-
            </Route>
+           <Route exact path="/tracking" element={<Tracking/>}></Route>
         </Routes>
         <Footer/>
       </Router>
