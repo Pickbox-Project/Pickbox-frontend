@@ -11,7 +11,7 @@ const Tracking = () => {
       </div>
       <div className="tracking-input">
         <AiOutlineSearch />
-        <input type="search" placeholder="Search" />
+        <input type="search" placeholder="Search" className="search-icon" />
       </div>
     </div>
   );
