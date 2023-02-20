@@ -23,4 +23,9 @@
     width: 300px;
     height: 32px;
     padding: 0px 0px 0px 30px;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
 }
