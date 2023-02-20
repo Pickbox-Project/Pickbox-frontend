@@ -1,5 +1,6 @@
 import React from "react";
 import "./Tracking.css";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Tracking = () => {
   return (
@@ -9,6 +10,7 @@ const Tracking = () => {
         <p>Please enter your tracking number</p>
       </div>
       <div className="tracking-input">
+        <AiOutlineSearch />
         <input type="search" placeholder="Search" />
       </div>
     </div>
