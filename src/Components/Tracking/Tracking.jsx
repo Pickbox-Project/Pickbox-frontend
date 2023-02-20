@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Tracking.css";
 
 const Tracking = () => {
-  return (
-    <div>Tracking</div>
-  )
-}
+  return <div>Tracking</div>;
+};
 
-export default Tracking
+export default Tracking;
