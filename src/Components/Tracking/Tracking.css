@@ -20,20 +20,26 @@
 }
 
 .tracking-input>input {
-    width: 300px;
-    height: 32px;
+    width: 350px;
+    height: 40px;
     padding: 0px 0px 0px 30px;
     position: relative;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 .search-icon {
     position: absolute;
     z-index: 9999;
     font-size: 20px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 6px;
 }
 
 .search-icon:hover {
     cursor: pointer;
+}
+
+.tracking-input>input:focus {
+    outline: none;
 }
