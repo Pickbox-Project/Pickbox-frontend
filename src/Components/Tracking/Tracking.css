@@ -18,3 +18,8 @@
     font-family: "DM Sans";
     font-size: 19px;
 }
+
+.tracking-input>input {
+    width: 300px;
+    height: 32px;
+}
