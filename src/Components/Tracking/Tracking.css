@@ -44,6 +44,11 @@
     outline: none;
 }
 
+.tracking-input>input::placeholder {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
 .tracking-result {
     margin: 30px 0px 30px 0px;
 }
