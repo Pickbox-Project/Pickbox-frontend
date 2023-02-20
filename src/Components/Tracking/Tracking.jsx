@@ -10,8 +10,8 @@ const Tracking = () => {
         <p>Please enter your tracking number</p>
       </div>
       <div className="tracking-input">
-        <AiOutlineSearch />
-        <input type="search" placeholder="Search" className="search-icon" />
+        <AiOutlineSearch className="search-icon" />
+        <input type="search" placeholder="Search" />
       </div>
     </div>
   );
