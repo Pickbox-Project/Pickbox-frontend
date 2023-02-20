@@ -1,6 +1,7 @@
 import React from "react";
 import "./Tracking.css";
 import { AiOutlineSearch } from "react-icons/ai";
+import entertrackingNumberImage from "../../Assets/images/enter-tracking number.png";
 
 const Tracking = () => {
   return (
@@ -13,7 +14,9 @@ const Tracking = () => {
         <AiOutlineSearch className="search-icon" />
         <input type="search" placeholder="Search" />
       </div>
-      <div className="tracking-result"></div>
+      <div className="tracking-result">
+        <img src={entertrackingNumberImage} alt="Enter Tracking Number Icon" />
+      </div>
     </div>
   );
 };
