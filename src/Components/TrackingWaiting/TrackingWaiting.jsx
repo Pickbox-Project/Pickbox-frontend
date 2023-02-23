@@ -12,10 +12,10 @@ const TrackingWaiting = () => {
       </div>
       <div className="tracking-input">
         <AiOutlineSearch className="search-icon" />
-        <input type="search" placeholder="8E368916IBD"/>
+        <input type="search" placeholder="8E368916IBD" />
       </div>
       <div className="tracking-result">
-        <img src={trackingWaiting} alt="Enter Tracking Number Icon" />
+        <img src={trackingWaiting} alt="Waiting Tracking Icon" />
       </div>
     </div>
   );
