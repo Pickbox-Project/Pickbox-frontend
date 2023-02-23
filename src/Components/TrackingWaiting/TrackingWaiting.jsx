@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useNavigate } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import trackingWaiting from "../../Assets/images/trackingWaiting.png";
 import "./TrackingWaiting.css";
 
 const TrackingWaiting = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/more-details");
+  };
   return (
     <div className="tracking-container">
       <div className="tracking-text">
@@ -17,7 +21,9 @@ const TrackingWaiting = () => {
       <div className="tracking-result">
         <img src={trackingWaiting} alt="Waiting Tracking Icon" />
       </div>
-      <button className="tracking-button">More details</button>
+      <button className="tracking-button" onClick={handleNavigate}>
+        More details
+      </button>
     </div>
   );
 };
