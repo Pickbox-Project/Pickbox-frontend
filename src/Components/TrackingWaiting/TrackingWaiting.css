@@ -1,0 +1,13 @@
+.tracking-button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    border: 1px solid rgba(170, 68, 0, 0.5);
+    border-radius: 4px;
+}
+
+.tracking-button:hover {
+    cursor: pointer;
+}
