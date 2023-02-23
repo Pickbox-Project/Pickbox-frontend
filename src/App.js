@@ -33,6 +33,11 @@ function App() {
             path="/tracking-waiting"
             element={<TrackingWaiting />}
           ></Route>
+          <Route
+            exact
+            path="/more-details"
+            element={<p>More Details</p>}
+          ></Route>
         </Routes>
         <Footer />
       </Router>
