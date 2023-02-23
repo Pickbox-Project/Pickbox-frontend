@@ -17,6 +17,7 @@ const TrackingWaiting = () => {
       <div className="tracking-result">
         <img src={trackingWaiting} alt="Waiting Tracking Icon" />
       </div>
+      <button className="tracking-button">More details</button>
     </div>
   );
 };
