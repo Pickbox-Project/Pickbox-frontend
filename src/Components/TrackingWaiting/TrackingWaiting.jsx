@@ -1,5 +1,6 @@
-import React, { useNavigate } from "react";
+import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 import trackingWaiting from "../../Assets/images/trackingWaiting.png";
 import "./TrackingWaiting.css";
 
