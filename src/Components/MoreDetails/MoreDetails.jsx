@@ -37,6 +37,10 @@ const MoreDetails = () => {
             <AiFillPhone className="agent-icon" />
             0803354XXXX
           </a>
+          <div className="send-download-button">
+            <button className="primary-button">Send ID to receiver</button>
+            <button className="secondary-button">Download receipt</button>
+          </div>
         </div>
         <div className="delivering-image">
           <p>Image</p>

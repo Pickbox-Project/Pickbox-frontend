@@ -9,6 +9,10 @@
     flex-wrap: wrap;
 }
 
+.send-download-button {
+    margin-top: 20px;
+}
+
 .more-details-customer-info .main-text {
     font-family: "Oswald", sans-serif;
     font-size: 25px;
@@ -81,4 +85,12 @@
 .delivering-image>p {
     text-align: center;
     margin-top: 200px;
+}
+
+.primary-button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    height: 35px;
+    width: 160px;
 }
