@@ -3,7 +3,7 @@ import "./MoreDetails.css";
 
 const MoreDetails = () => {
   return (
-    <div className="more-details-component">
+    <div className="more-details-container">
       <div className="more-details-info">
         <div className="more-details-customer-info">
           <h4>Tracking details</h4>
