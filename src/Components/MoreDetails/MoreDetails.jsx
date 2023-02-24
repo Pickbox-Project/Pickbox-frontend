@@ -14,7 +14,7 @@ const MoreDetails = () => {
             Status: <span className="result">In transit</span>
           </h5>
           <h4 className="sub-main-text">Receiver's information</h4>
-          <form>
+          <form className="tracking-form">
             <label htmlFor="name">Name</label>
             <input type="text" placeholder="Mary Allison" id="name" />
             <label htmlFor="destination">Destination</label>
@@ -26,7 +26,7 @@ const MoreDetails = () => {
             <label htmlFor="delivery-time">Expected delivery time</label>
             <input
               type="text"
-              placeholder="No 15 Olu road, Ibadan"
+              placeholder="13th August, 2022 by 15:30pm"
               id="delivery-time"
             />
           </form>
