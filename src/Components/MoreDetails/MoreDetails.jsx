@@ -6,7 +6,7 @@ const MoreDetails = () => {
     <div className="more-details-container">
       <div className="more-details-info">
         <div className="more-details-customer-info">
-          <h4>Tracking details</h4>
+          <h4 className="main-text">Tracking details</h4>
           <h5>
             Tracking details: <span>XXXXXXXXXX1234</span>
           </h5>

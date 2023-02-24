@@ -5,3 +5,10 @@
 .more-details-info {
     display: flex;
 }
+
+.more-details-customer-info .main-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
