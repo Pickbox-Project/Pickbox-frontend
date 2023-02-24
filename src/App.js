@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import Faqs from "./Components/Faqs/Faqs";
 import Tracking from "./Components/Tracking/Tracking";
 import TrackingWaiting from "./Components/TrackingWaiting/TrackingWaiting";
+import MoreDetails from "./Components/MoreDetails/MoreDetails";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
           <Route
             exact
             path="/more-details"
-            element={<p>More Details</p>}
+            element={<MoreDetails/>}
           ></Route>
         </Routes>
         <Footer />
