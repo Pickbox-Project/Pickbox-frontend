@@ -11,7 +11,7 @@ const MoreDetails = () => {
             Tracking details: <span>XXXXXXXXXX1234</span>
           </h5>
           <h5>
-            Status: <span>In transit</span>
+            Status: <span className="result">In transit</span>
           </h5>
           <h4>Receiver's information</h4>
         </div>

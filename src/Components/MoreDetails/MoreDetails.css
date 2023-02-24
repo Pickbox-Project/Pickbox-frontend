@@ -12,3 +12,15 @@
     font-weight: 400;
     margin-bottom: 20px;
 }
+
+.more-details-customer-info>h5 {
+    font-family: "DM Sans";
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.more-details-customer-info .result {
+    color: #108afb;
+    font-size: 18px;
+}
