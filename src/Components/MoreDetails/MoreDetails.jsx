@@ -30,6 +30,7 @@ const MoreDetails = () => {
               id="delivery-time"
             />
           </form>
+          <h4 className="sub-main-text">Agent's number</h4>
         </div>
       </div>
     </div>
