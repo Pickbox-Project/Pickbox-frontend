@@ -54,3 +54,14 @@
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
 }
+
+.icon {
+    color: #3eff1f;
+    font-size: 22px;
+}
+
+.agent-number {
+    text-decoration: none;
+    font-size: 20px;
+    color: #888888;
+}

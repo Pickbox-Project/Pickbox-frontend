@@ -1,5 +1,6 @@
 import React from "react";
 import "./MoreDetails.css";
+import { AiFillPhone } from "react-icons/ai";
 
 const MoreDetails = () => {
   return (
@@ -31,6 +32,11 @@ const MoreDetails = () => {
             />
           </form>
           <h4 className="sub-main-text">Agent's number</h4>
+          <a href="##" className="agent-number">
+            {" "}
+            <AiFillPhone className="icon" />
+            0803354XXXX
+          </a>
         </div>
       </div>
     </div>
