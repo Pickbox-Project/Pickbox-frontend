@@ -55,9 +55,10 @@
     font-family: "DM Sans", sans-serif;
 }
 
-.icon {
+.agent-icon {
     color: #3eff1f;
     font-size: 22px;
+    margin-right: 10px;
 }
 
 .agent-number {

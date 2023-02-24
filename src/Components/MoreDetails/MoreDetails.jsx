@@ -32,9 +32,9 @@ const MoreDetails = () => {
             />
           </form>
           <h4 className="sub-main-text">Agent's number</h4>
-          <a href="##" className="agent-number">
+          <a href="tel:0803354XXXX" className="agent-number">
             {" "}
-            <AiFillPhone className="icon" />
+            <AiFillPhone className="agent-icon" />
             0803354XXXX
           </a>
         </div>
