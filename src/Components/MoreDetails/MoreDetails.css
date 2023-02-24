@@ -4,6 +4,9 @@
 
 .more-details-info {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .more-details-customer-info .main-text {
@@ -65,4 +68,17 @@
     text-decoration: none;
     font-size: 20px;
     color: #888888;
+}
+
+.delivering-image {
+    width: 700px;
+    height: 400px;
+    background: #d0d0d0;
+    border: 1px solid rgba(208, 208, 208, 0.1);
+    border-radius: 4px;
+}
+
+.delivering-image>p {
+    text-align: center;
+    margin-top: 200px;
 }

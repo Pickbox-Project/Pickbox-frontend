@@ -38,6 +38,9 @@ const MoreDetails = () => {
             0803354XXXX
           </a>
         </div>
+        <div className="delivering-image">
+          <p>Image</p>
+        </div>
       </div>
     </div>
   );
