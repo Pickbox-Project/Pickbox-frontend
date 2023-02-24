@@ -2,7 +2,21 @@ import React from "react";
 import "./MoreDetails.css";
 
 const MoreDetails = () => {
-  return <div>MoreDetails</div>;
+  return (
+    <div className="more-details-component">
+      <div className="more-details-info">
+        <div className="more-details-customer-info">
+          <h4>Tracking details</h4>
+          <h5>
+            Tracking details: <span>XXXXXXXXXX1234</span>
+          </h5>
+          <h5>
+            Status: <span>In transit</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default MoreDetails;
