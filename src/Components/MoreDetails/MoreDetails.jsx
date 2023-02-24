@@ -13,6 +13,7 @@ const MoreDetails = () => {
           <h5>
             Status: <span>In transit</span>
           </h5>
+          <h4>Receiver's information</h4>
         </div>
       </div>
     </div>
