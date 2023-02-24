@@ -13,7 +13,7 @@ const MoreDetails = () => {
           <h5>
             Status: <span className="result">In transit</span>
           </h5>
-          <h4>Receiver's information</h4>
+          <h4 className="sub-main-text">Receiver's information</h4>
         </div>
       </div>
     </div>
