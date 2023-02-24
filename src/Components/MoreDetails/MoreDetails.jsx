@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./MoreDetails.css";
 
 const MoreDetails = () => {
-  return (
-    <div>MoreDetails</div>
-  )
-}
+  return <div>MoreDetails</div>;
+};
 
-export default MoreDetails
+export default MoreDetails;
