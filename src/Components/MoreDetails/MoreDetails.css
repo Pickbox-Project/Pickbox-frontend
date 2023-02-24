@@ -35,4 +35,8 @@
 
 .more-details-customer-info input {
     display: block;
+    width: 250px;
+    height: 30px;
+    border: none;
+    background: #e6e6e6;
 }
