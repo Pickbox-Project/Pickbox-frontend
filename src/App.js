@@ -10,6 +10,7 @@ import Tracking from "./Components/Tracking/Tracking";
 import TrackingWaiting from "./Components/TrackingWaiting/TrackingWaiting";
 import MoreDetails from "./Components/MoreDetails/MoreDetails";
 import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
+import TrackingDelivered from "./Components/TrackingDelivered/TrackingDelivered";
 
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
             exact
             path="/tracking-in-transit"
             element={<TrackingTransit/>}
+          ></Route>
+          <Route
+            exact
+            path="/tracking-delivered"
+            element={<TrackingDelivered/>}
           ></Route>
           <Route
             exact
