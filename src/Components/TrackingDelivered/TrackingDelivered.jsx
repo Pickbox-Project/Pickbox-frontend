@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import trackingDelivered from "../../Assets/images/tracking-delivered.png";
 
 const TrackingDelivered = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/more-details");
+  };
   return (
     <div className="tracking-container">
       <div className="tracking-text">
