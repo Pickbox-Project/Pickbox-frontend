@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import trackingDelivered from "../../Assets/images/tracking-delivered.png";
 
 const TrackingDelivered = () => {
   return (
@@ -14,7 +15,7 @@ const TrackingDelivered = () => {
         <input type="search" placeholder="8E368916IBD" />
       </div>
       <div className="tracking-result">
-        <img src={trackingTransit} alt="Waiting Tracking Icon" />
+        <img src={trackingDelivered} alt="Waiting Tracking Icon" />
       </div>
       <button className="tracking-button" onClick={handleNavigate}>
         More details
