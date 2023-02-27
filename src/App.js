@@ -9,6 +9,7 @@ import Faqs from "./Components/Faqs/Faqs";
 import Tracking from "./Components/Tracking/Tracking";
 import TrackingWaiting from "./Components/TrackingWaiting/TrackingWaiting";
 import MoreDetails from "./Components/MoreDetails/MoreDetails";
+import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
             exact
             path="/tracking-waiting"
             element={<TrackingWaiting />}
+          ></Route>
+          <Route
+            exact
+            path="/tracking-in-transit"
+            element={<TrackingTransit/>}
           ></Route>
           <Route
             exact
