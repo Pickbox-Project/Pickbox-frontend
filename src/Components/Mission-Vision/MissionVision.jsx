@@ -31,12 +31,12 @@ const MissionVision = () => {
       {/* Vision Container */}
       <div className="vision-container">
         <div className="our-mission-text-container">
-          <div className="our-text">
+          <div className="our-vision-text">
             <span>O</span>
             <span>U</span>
             <span>R</span>
           </div>
-          <div className="mission-text">
+          <div className="vission-text">
             <span>V</span>
             <span>I</span>
             <span>S</span>

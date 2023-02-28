@@ -8,9 +8,6 @@
     background: #ff6600;
     height: 300px;
     width: 50%;
-}
-
-.mission-container {
     padding: 100px 0px 0px 0px;
 }
 
@@ -50,4 +47,23 @@
     font-weight: 700;
     font-family: "Oswald", sans-serif;
     color: #ff6600;
+}
+
+.vision-container {
+    background: #fff;
+    height: 300px;
+    width: 50%;
+    padding: 100px 0px 0px 0px;
+}
+
+.our-vision-text {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vision-container>h5 {
+    color: #ff6600;
+    text-align: center;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
 }
