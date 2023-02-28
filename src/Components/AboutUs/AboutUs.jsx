@@ -1,4 +1,5 @@
 import React from "react";
+import MissionVision from "../Mission-Vision/MissionVision";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -28,6 +29,7 @@ const AboutUs = () => {
           </h5>
         </div>
       </div>
+      <MissionVision/>
     </div>
   );
 };
