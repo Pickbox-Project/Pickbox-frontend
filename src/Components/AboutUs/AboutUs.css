@@ -33,6 +33,7 @@
 
 .about-text {
     margin-top: 20px;
+    padding: 10px;
 }
 
 @media (min-width: 992px) {
