@@ -6,12 +6,12 @@
 
 .mission-container {
     background: #ff6600;
-    height: 200px;
-    width: 600px;
+    height: 300px;
+    width: 50%;
 }
 
 .mission-container {
-    padding: 50px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 .our-mission-text-container {

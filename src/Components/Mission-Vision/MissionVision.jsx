@@ -46,10 +46,12 @@ const MissionVision = () => {
           </div>
         </div>
         <h5>
-          To foster a global solution platform <br />
-          that makes it easier for individuals
+          To be the fastest, most reasonably <br />
+          priced, consistently dependable,
           <br />
-          and businesses to trade.
+          and effective logistics company in Sub-
+          <br />
+          Saharan Africa.
         </h5>
       </div>
     </div>
