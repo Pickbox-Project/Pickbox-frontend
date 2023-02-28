@@ -9,3 +9,7 @@
     height: 200px;
     width: 400px;
 }
+
+.mission-container>h5 {
+    color: #fff;
+}
