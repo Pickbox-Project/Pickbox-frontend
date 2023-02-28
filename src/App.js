@@ -11,6 +11,7 @@ import TrackingWaiting from "./Components/TrackingWaiting/TrackingWaiting";
 import MoreDetails from "./Components/MoreDetails/MoreDetails";
 import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
 import TrackingDelivered from "./Components/TrackingDelivered/TrackingDelivered";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           />
           <Route exact path="/contactus" element={<Faqs />}></Route>
           <Route exact path="/tracking" element={<Tracking />}></Route>
+          <Route exact path="/aboutus" element={<AboutUs />}></Route>
           <Route
             exact
             path="/tracking-waiting"
@@ -39,18 +41,14 @@ function App() {
           <Route
             exact
             path="/tracking-in-transit"
-            element={<TrackingTransit/>}
+            element={<TrackingTransit />}
           ></Route>
           <Route
             exact
             path="/tracking-delivered"
-            element={<TrackingDelivered/>}
+            element={<TrackingDelivered />}
           ></Route>
-          <Route
-            exact
-            path="/more-details"
-            element={<MoreDetails/>}
-          ></Route>
+          <Route exact path="/more-details" element={<MoreDetails />}></Route>
         </Routes>
         <Footer />
       </Router>
