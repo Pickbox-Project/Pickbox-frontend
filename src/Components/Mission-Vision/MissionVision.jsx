@@ -21,6 +21,12 @@ const MissionVision = () => {
             <span>N</span>
           </div>
         </div>
+        <h5>
+          To foster a global solution platform <br />
+          that makes it easier for individuals
+          <br />
+          and businesses to trade.
+        </h5>
       </div>
     </div>
   );
