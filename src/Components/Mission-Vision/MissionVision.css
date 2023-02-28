@@ -87,3 +87,15 @@
     font-family: "Oswald", sans-serif;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .mission-vision-container {
+        flex-direction: column;
+    }
+    .mission-container {
+        width: 100%;
+    }
+    .vision-container {
+        width: 100%;
+    }
+}
