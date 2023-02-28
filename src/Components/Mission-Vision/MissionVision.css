@@ -1,15 +1,30 @@
 .mission-vision-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -40px;
 }
 
 .mission-container {
     background: #ff6600;
     height: 200px;
-    width: 400px;
+    width: 600px;
+}
+
+.mission-container {
+    padding: 50px 0px 0px 0px;
+}
+
+.our-mission-text-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.our-text {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .mission-container>h5 {
     color: #fff;
+    text-align: center;
 }
