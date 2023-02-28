@@ -29,7 +29,7 @@ const MissionVision = () => {
         </h5>
       </div>
       {/* Vision Container */}
-      <div className="mission-container">
+      <div className="vision-container">
         <div className="our-mission-text-container">
           <div className="our-text">
             <span>O</span>
