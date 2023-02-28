@@ -36,7 +36,7 @@ const MissionVision = () => {
             <span>U</span>
             <span>R</span>
           </div>
-          <div className="vission-text">
+          <div className="vision-text">
             <span>V</span>
             <span>I</span>
             <span>S</span>
