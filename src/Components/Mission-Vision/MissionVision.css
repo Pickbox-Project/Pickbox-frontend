@@ -28,3 +28,23 @@
     color: #fff;
     text-align: center;
 }
+
+.our-text>span {
+    background: #fff;
+    padding: 4px;
+    margin-right: 3px;
+    font-size: 29px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: #ff6600;
+}
+
+.mission-text>span {
+    background: #fff;
+    padding: 4px;
+    margin-right: 3px;
+    font-size: 29px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: #ff6600;
+}
