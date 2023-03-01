@@ -6,6 +6,9 @@ const Founders = () => {
   return (
     <div className="founders-container">
       <img src={vectorRight} alt="Vector Right" />
+      <div className="founder-text">
+        <h3>Meet The Founders</h3>
+      </div>
     </div>
   );
 };
