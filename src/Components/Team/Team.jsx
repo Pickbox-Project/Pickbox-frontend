@@ -8,6 +8,13 @@ const Team = () => {
     <div className="team-container">
       <img src={teamVectorRight} alt="" className="team-vector-right" />
       <img src={teamVectorLeft} alt="" className="team-vector-left" />
+      <div className="team-text">
+        <h3>The PickBox Team</h3>
+        <h5>
+          The pickbox team is made up of very
+          agile...............................................
+        </h5>
+      </div>
     </div>
   );
 };

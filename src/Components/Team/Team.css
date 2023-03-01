@@ -1,6 +1,7 @@
 .team-container {
     padding: 20px;
     position: relative;
+    margin-top: 40px;
 }
 
 .team-vector-right {
@@ -13,4 +14,21 @@
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.team-text>h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #ff6600;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+}
+
+.team-text>h5 {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 30px;
 }
