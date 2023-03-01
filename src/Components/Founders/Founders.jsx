@@ -1,7 +1,7 @@
 import React from "react";
 import "./Founders.css";
 import vectorRight from "../../Assets/images/vector right.png";
-import founderImage from "../../Assets/images/Adediran Ifeoluwa.png";
+import { foundersDatas } from "./data";
 
 const Founders = () => {
   return (
@@ -16,13 +16,21 @@ const Founders = () => {
         <h5>A little extra writeup for the founders</h5>
       </div>
       <div className="founders-gallery">
-        <div className="founders-card">
-          <img src={founderImage} alt="" className="founder-image" />
-          <div className="founder-info-text">
-            <h5 className="founder-name">Ifeoluwa Adediran</h5>
-            <h5 className="founder-role">Founder</h5>
+        {foundersDatas.map((foundersData) => (
+          <div className="founders-card">
+            <img
+              src={foundersData.founderImage}
+              alt=""
+              className="founder-image"
+            />
+            <div className="founder-info-text">
+              <h5 className="founder-name">{foundersData.founderName}</h5>
+              <h5 className="founder-role" key={foundersData.id}>
+                {foundersData.founderRole}
+              </h5>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
