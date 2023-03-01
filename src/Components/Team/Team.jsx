@@ -2,7 +2,7 @@ import React from "react";
 import "./Team.css";
 import teamVectorRight from "../../Assets/images/team-vector-right.png";
 import teamVectorLeft from "../../Assets/images/team-vector-left.png";
-import firstTeamMember from "../../Assets/images/Adediran Ifeoluwa.png";
+import { teamsData } from "./data";
 
 const Team = () => {
   return (
@@ -17,13 +17,21 @@ const Team = () => {
         </h5>
       </div>
       <div className="team-gallery">
-        <div className="team-card">
-          <img src={firstTeamMember} alt="" className="team-member-image" />
-          <div className="team-info-text">
-            <h5 className="team-member-name">Ifeoluwa Adediran</h5>
-            <h5 className="team-member-role">CEO</h5>
+        {teamsData.map((teamData) => (
+          <div className="team-card">
+            <img
+              src={teamData.teamMemberImage}
+              alt=""
+              className="team-member-image"
+            />
+            <div className="team-info-text">
+              <h5 className="team-member-name">{teamData.teamMemberName}</h5>
+              <h5 className="team-member-role" key={teamData.teamMemberRole}>
+                {teamData.teamMemberRole}
+              </h5>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -20,7 +20,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .team-text>h3 {
@@ -41,8 +43,8 @@
 }
 
 .team-member-image {
-    width: 200px;
-    height: 180px;
+    width: 250px;
+    height: 210px;
     object-fit: cover;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
@@ -50,7 +52,7 @@
 
 .team-info-text {
     background: #ff6600;
-    width: 200px;
+    width: 250px;
     margin-top: -5px;
     height: 50px;
     border-bottom-left-radius: 6px;
