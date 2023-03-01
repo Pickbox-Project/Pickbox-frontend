@@ -1,0 +1,13 @@
+.team-container {
+    padding: 20px;
+}
+
+.team-vector-right {
+    position: absolute;
+    right: 0;
+}
+
+.team-vector-left {
+    position: absolute;
+    left: 0;
+}
