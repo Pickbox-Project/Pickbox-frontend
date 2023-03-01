@@ -1,7 +1,11 @@
 import React from "react";
 
 const Founders = () => {
-  return <div>Founders Component</div>;
+  return (
+    <div className="founders-container">
+      <div></div>
+    </div>
+  );
 };
 
 export default Founders;
