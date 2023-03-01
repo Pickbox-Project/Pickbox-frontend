@@ -14,6 +14,9 @@ const Founders = () => {
         <h3>Meet The Founders</h3>
         <h5>A little extra writeup for the founders</h5>
       </div>
+      <div className="founders-gallery">
+        <div className="founders-card"></div>
+      </div>
     </div>
   );
 };
