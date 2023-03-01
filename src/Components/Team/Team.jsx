@@ -17,10 +17,12 @@ const Team = () => {
         </h5>
       </div>
       <div className="team-gallery">
-        <img src={firstTeamMember} alt="" className="team-member-image" />
-        <div className="team-info-text">
-          <h5 className="team-member-name">Ifeoluwa Adediran</h5>
-          <h5 className="team-member-role">CEO</h5>
+        <div className="team-card">
+          <img src={firstTeamMember} alt="" className="team-member-image" />
+          <div className="team-info-text">
+            <h5 className="team-member-name">Ifeoluwa Adediran</h5>
+            <h5 className="team-member-role">CEO</h5>
+          </div>
         </div>
       </div>
     </div>

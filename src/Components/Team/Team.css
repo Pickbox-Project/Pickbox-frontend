@@ -16,6 +16,13 @@
     bottom: 0;
 }
 
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
 .team-text>h3 {
     font-size: 30px;
     text-align: center;
