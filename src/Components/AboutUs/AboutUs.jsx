@@ -1,6 +1,7 @@
 import React from "react";
 import Founders from "../Founders/Founders";
 import MissionVision from "../Mission-Vision/MissionVision";
+import Team from "../Team/Team";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -32,6 +33,7 @@ const AboutUs = () => {
       </div>
       <MissionVision />
       <Founders />
+      <Team />
     </div>
   );
 };
