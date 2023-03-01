@@ -32,3 +32,35 @@
     font-family: "DM Sans", sans-serif;
     margin-bottom: 30px;
 }
+
+.team-member-image {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.team-info-text {
+    background: #ff6600;
+    width: 200px;
+    margin-top: -5px;
+    height: 50px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.team-info-text .team-member-name {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.team-info-text .team-member-role {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
