@@ -12,6 +12,7 @@ const Founders = () => {
       />
       <div className="founder-text">
         <h3>Meet The Founders</h3>
+        <h5>A little extra writeup for the founders</h5>
       </div>
     </div>
   );

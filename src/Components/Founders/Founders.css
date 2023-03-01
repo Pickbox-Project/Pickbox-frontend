@@ -8,3 +8,19 @@
     right: 0;
     width: 150px;
 }
+
+.founder-text>h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #ff6600;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+}
+
+.founder-text>h5 {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    font-family: "DM Sans", sans-serif;
+}
