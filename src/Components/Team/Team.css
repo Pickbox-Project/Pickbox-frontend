@@ -1,13 +1,16 @@
 .team-container {
     padding: 20px;
+    position: relative;
 }
 
 .team-vector-right {
     position: absolute;
     right: 0;
+    top: 0;
 }
 
 .team-vector-left {
     position: absolute;
     left: 0;
+    bottom: 0;
 }
