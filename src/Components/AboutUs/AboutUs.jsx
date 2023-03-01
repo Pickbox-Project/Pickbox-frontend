@@ -1,4 +1,5 @@
 import React from "react";
+import Founders from "../Founders/Founders";
 import MissionVision from "../Mission-Vision/MissionVision";
 import "./AboutUs.css";
 
@@ -29,7 +30,8 @@ const AboutUs = () => {
           </h5>
         </div>
       </div>
-      <MissionVision/>
+      <MissionVision />
+      <Founders />
     </div>
   );
 };
