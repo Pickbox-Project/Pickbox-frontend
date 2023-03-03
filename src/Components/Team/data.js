@@ -1,7 +1,7 @@
 import firstTeamMember from "../../Assets/images/Adediran Ifeoluwa.png";
 import defaultImage from "../../Assets/images/default-team-image.png";
 import jelilatImage from "../../Assets/images/Jelilat-Image.png";
-import michaelImage from "../../Assets/images/michael-Image.png";
+import michaelImage from "../../Assets/images/michaelImage.png";
 export const teamsData = [{
         id: 1,
         teamMemberImage: firstTeamMember,
