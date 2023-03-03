@@ -30,7 +30,7 @@ export const teamsData = [{
     {
         id: 5,
         teamMemberImage: jelilatImage,
-        teamMemberName: "Name Surname",
+        teamMemberName: "Jelilat Akeem-Omosanya",
         teamMemberRole: "Position",
     },
     {
