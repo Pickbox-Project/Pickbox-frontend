@@ -73,3 +73,10 @@
     color: #fff;
     font-family: "DM Sans", sans-serif;
 }
+
+@media (max-width: 800px) {
+    .team-vector-right,
+    .team-vector-left {
+        width: 70px;
+    }
+}
