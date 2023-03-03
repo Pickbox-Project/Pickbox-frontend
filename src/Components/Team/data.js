@@ -41,7 +41,7 @@ export const teamsData = [{
     {
         id: 7,
         teamMemberImage: michaelImage,
-        teamMemberName: "Name Surname",
+        teamMemberName: "Michael Omotoso",
         teamMemberRole: "Position",
     },
 ];
