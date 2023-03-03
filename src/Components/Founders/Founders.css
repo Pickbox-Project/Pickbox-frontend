@@ -5,7 +5,6 @@
 .founders-vector-right {
     position: absolute;
     right: 0;
-    width: 150px;
 }
 
 .founder-text>h3 {
@@ -63,4 +62,16 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+@media (min-width: 772px) {
+    .founders-vector-right {
+        width: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .founders-vector-right {
+        width: 100px;
+    }
 }
