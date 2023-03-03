@@ -2,6 +2,7 @@ import firstTeamMember from "../../Assets/images/Adediran Ifeoluwa.png";
 import defaultImage from "../../Assets/images/default-team-image.png";
 import jelilatImage from "../../Assets/images/Jelilat-Image.png";
 import michaelImage from "../../Assets/images/michaelImage.png";
+import devOlagboyeImage from "../../Assets/images/devOlagboyeImage.png";
 export const teamsData = [{
         id: 1,
         teamMemberImage: firstTeamMember,
@@ -22,9 +23,9 @@ export const teamsData = [{
     },
     {
         id: 4,
-        teamMemberImage: defaultImage,
-        teamMemberName: "Name Surname",
-        teamMemberRole: "Position",
+        teamMemberImage: devOlagboyeImage,
+        teamMemberName: "Olagboye Akingbola",
+        teamMemberRole: "Frontend Engineer",
     },
     {
         id: 5,
