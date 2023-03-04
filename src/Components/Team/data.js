@@ -36,7 +36,7 @@ export const teamsData = [{
     },
     {
         id: 6,
-        teamMemberImage: defaultImage,
+        teamMemberImage: johnImage,
         teamMemberName: "Name Surname",
         teamMemberRole: "Position",
     },
