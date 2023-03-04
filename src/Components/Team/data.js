@@ -1,7 +1,9 @@
 import firstTeamMember from "../../Assets/images/Adediran Ifeoluwa.png";
 import defaultImage from "../../Assets/images/default-team-image.png";
 import jelilatImage from "../../Assets/images/Jelilat-Image.png";
-import michaelImage from "../../Assets/images/michael-Image.png";
+import michaelImage from "../../Assets/images/michaelImage.png";
+import devOlagboyeImage from "../../Assets/images/devOlagboyeImage.png";
+import johnImage from "../../Assets/images/johnImage.png";
 export const teamsData = [{
         id: 1,
         teamMemberImage: firstTeamMember,
@@ -22,19 +24,19 @@ export const teamsData = [{
     },
     {
         id: 4,
-        teamMemberImage: defaultImage,
-        teamMemberName: "Name Surname",
-        teamMemberRole: "Position",
+        teamMemberImage: devOlagboyeImage,
+        teamMemberName: "Olagboye Akingbola",
+        teamMemberRole: "Frontend Engineer",
     },
     {
         id: 5,
         teamMemberImage: jelilatImage,
-        teamMemberName: "Name Surname",
+        teamMemberName: "Jelilat Akeem-Omosanya",
         teamMemberRole: "Position",
     },
     {
         id: 6,
-        teamMemberImage: defaultImage,
+        teamMemberImage: johnImage,
         teamMemberName: "Name Surname",
         teamMemberRole: "Position",
     },
