@@ -4,9 +4,10 @@ import jelilatImage from "../../Assets/images/Jelilat-Image.png";
 import michaelImage from "../../Assets/images/michaelImage.png";
 import devOlagboyeImage from "../../Assets/images/devOlagboyeImage.png";
 import johnImage from "../../Assets/images/johnImage.png";
+import ceoSecondImage from "../../Assets/images/ifeoluwa-secondImage.png";
 export const teamsData = [{
         id: 1,
-        teamMemberImage: firstTeamMember,
+        teamMemberImage: ceoSecondImage,
         teamMemberName: "Ifeoluwa Adediran",
         teamMemberRole: "CEO",
     },
