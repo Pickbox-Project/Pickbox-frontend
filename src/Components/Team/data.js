@@ -7,7 +7,7 @@ import johnImage from "../../Assets/images/johnImage.png";
 import ceoSecondImage from "../../Assets/images/ifeoluwa-secondImage.png";
 export const teamsData = [{
         id: 1,
-        teamMemberImage: firstTeamMember,
+        teamMemberImage: ceoSecondImage,
         teamMemberName: "Ifeoluwa Adediran",
         teamMemberRole: "CEO",
     },
