@@ -25,6 +25,7 @@
     list-style: none;
     margin: 10px 0px 10px 0px;
     font-family: "DM Sans", sans-serif;
+    transition: ease-in 0.5s;
 }
 
 .navigation-links li:hover {
