@@ -58,6 +58,10 @@
     color: #000;
 }
 
+.icon:hover {
+    transform: translateY(8px);
+}
+
 @media (max-width: 820px) {
     .footer-details {
         flex-direction: column;
