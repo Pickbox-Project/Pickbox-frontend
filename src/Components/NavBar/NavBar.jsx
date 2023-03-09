@@ -67,7 +67,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="toggler-icon">
-        <FaBars />
+        <FaBars onClick={showDrawer} />
       </div>
       <Drawer
         title="Basic Drawer"
@@ -75,7 +75,7 @@ const NavBar = () => {
         onClose={onClose}
         open={open}
       >
-        <div className="nav-list">
+        <div className="nav-list-mobile">
           <ul>
             <li>
               <NavLink
