@@ -19,6 +19,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
 }
 
 .toggler-bars {
