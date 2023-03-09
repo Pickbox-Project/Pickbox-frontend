@@ -69,12 +69,7 @@ const NavBar = () => {
       <div className="toggler-icon">
         <FaBars onClick={showDrawer} className="toggler-bars" />
       </div>
-      <Drawer
-        title="Basic Drawer"
-        placement="left"
-        onClose={onClose}
-        open={open}
-      >
+      <Drawer placement="left" onClose={onClose} open={open}>
         <div className="nav-list-mobile">
           <ul>
             <li>

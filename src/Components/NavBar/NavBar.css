@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.toggler-bars:hover {
+    cursor: pointer;
+}
+
 .nav-list>ul>li {
     list-style: none;
     margin-left: 30px;
