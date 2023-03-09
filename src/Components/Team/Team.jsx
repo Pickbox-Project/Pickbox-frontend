@@ -18,7 +18,7 @@ const Team = () => {
       </div>
       <div className="team-gallery">
         {teamsData.map((teamData) => (
-          <div className="team-card">
+          <div className="team-card" key={teamData.id}>
             <img
               src={teamData.teamMemberImage}
               alt=""
