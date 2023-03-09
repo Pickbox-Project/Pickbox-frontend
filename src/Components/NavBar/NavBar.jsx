@@ -5,6 +5,8 @@ import { Drawer } from "antd";
 import pickboxLogo from "../../Assets/images/pickbox-logo.png";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="navbar-container">
       <div className="pickbox-logo">
