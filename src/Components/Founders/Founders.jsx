@@ -17,7 +17,7 @@ const Founders = () => {
       </div>
       <div className="founders-gallery">
         {foundersDatas.map((foundersData) => (
-          <div className="founders-card">
+          <div className="founders-card" key={foundersDatas.id}>
             <img
               src={foundersData.founderImage}
               alt=""
