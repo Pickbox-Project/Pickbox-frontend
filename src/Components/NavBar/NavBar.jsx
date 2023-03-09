@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
+import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Drawer } from "antd";
 import pickboxLogo from "../../Assets/images/pickbox-logo.png";
@@ -65,7 +66,9 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-      <button onClick={showDrawer}>Toggle</button>
+      <div className="toggler-icon">
+        <FaBars />
+      </div>
       <Drawer
         title="Basic Drawer"
         placement="left"
