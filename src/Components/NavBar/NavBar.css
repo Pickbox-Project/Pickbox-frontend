@@ -24,6 +24,16 @@
     bottom: 30px;
 }
 
+.nav-list-mobile>ul>li {
+    list-style: none;
+    margin-bottom: 36px;
+    font-size: 20px;
+}
+
+.nav-list-mobile>ul>li>a:hover {
+    color: #d45500;
+}
+
 .toggler-bars {
     color: #fff;
     font-size: 17px;
