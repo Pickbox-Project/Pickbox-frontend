@@ -67,7 +67,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="toggler-icon">
-        <FaBars onClick={showDrawer} />
+        <FaBars onClick={showDrawer} className="toggler-bars" />
       </div>
       <Drawer
         title="Basic Drawer"
