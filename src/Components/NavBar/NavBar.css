@@ -16,12 +16,12 @@
     height: 50px;
     border-radius: 50%;
     background: #d45500;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
 }
 
 .toggler-bars {
@@ -53,5 +53,8 @@
 @media (max-width: 600px) {
     .nav-list>ul {
         display: none;
+    }
+    .toggler-icon {
+        display: flex;
     }
 }
