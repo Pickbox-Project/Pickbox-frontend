@@ -65,9 +65,10 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
+      <button onClick={showDrawer}>Toggle</button>
       <Drawer
         title="Basic Drawer"
-        placement="right"
+        placement="left"
         onClose={onClose}
         open={open}
       >
