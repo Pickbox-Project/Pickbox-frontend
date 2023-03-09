@@ -11,6 +11,38 @@
     align-items: center;
 }
 
+.toggler-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d45500;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.nav-list-mobile>ul>li {
+    list-style: none;
+    margin-bottom: 36px;
+    font-size: 20px;
+}
+
+.nav-list-mobile>ul>li>a:hover {
+    color: #d45500;
+}
+
+.toggler-bars {
+    color: #fff;
+    font-size: 17px;
+}
+
+.toggler-bars:hover {
+    cursor: pointer;
+}
+
 .nav-list>ul>li {
     list-style: none;
     margin-left: 30px;
@@ -32,5 +64,8 @@
 @media (max-width: 600px) {
     .nav-list>ul {
         display: none;
+    }
+    .toggler-icon {
+        display: flex;
     }
 }
