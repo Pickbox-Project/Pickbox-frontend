@@ -53,5 +53,10 @@
 .tracking-result>img {
     display: block;
     margin: 40px auto 40px auto;
-    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .tracking-result>img {
+        width: 100%;
+    }
 }
