@@ -60,3 +60,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .tracking-result>img {
+        width: 100%;
+    }
+}
