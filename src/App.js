@@ -12,6 +12,7 @@ import MoreDetails from "./Components/MoreDetails/MoreDetails";
 import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
 import TrackingDelivered from "./Components/TrackingDelivered/TrackingDelivered";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import TrackingError from "./Components/TrackingError/TrackingError";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
             element={<TrackingDelivered />}
           ></Route>
           <Route exact path="/more-details" element={<MoreDetails />}></Route>
+          <Route exact path="/tracking-error" element={<TrackingError/>}></Route>
         </Routes>
         <Footer />
       </Router>
