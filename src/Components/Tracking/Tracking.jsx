@@ -2,6 +2,7 @@ import React from "react";
 import "./Tracking.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import entertrackingNumberImage from "../../Assets/images/enter-tracking number.png";
+import trackingMobile from "../../Assets/images/tracking-default-mobile.png";
 
 const Tracking = () => {
   return (
@@ -15,7 +16,16 @@ const Tracking = () => {
         <input type="search" placeholder="Search" />
       </div>
       <div className="tracking-result">
-        <img src={entertrackingNumberImage} alt="Enter Tracking Number Icon" />
+        <img
+          src={entertrackingNumberImage}
+          className="trackingImage"
+          alt="Enter Tracking Number Icon"
+        />
+        <img
+          className="trackingMobile"
+          src={trackingMobile}
+          alt="Enter Tracking Number Icon Mobile"
+        />
       </div>
     </div>
   );
