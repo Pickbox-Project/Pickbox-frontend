@@ -1,3 +1,9 @@
 .error-message {
     color: red;
 }
+
+.tracking-result-error>img {
+    display: block;
+    margin: 40px auto 40px auto;
+    width: 250px;
+}
