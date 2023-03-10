@@ -14,7 +14,7 @@ const TrackingError = () => {
         <input type="search" placeholder="8E368916IBD" />
       </div>
       <div className="tracking-result">
-        <img src={trackingError} alt="Waiting Tracking Icon" />
+        <img src={trackingError} alt="Tracking Error Icon" />
       </div>
     </div>
   );
