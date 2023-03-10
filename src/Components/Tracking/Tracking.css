@@ -50,7 +50,8 @@
     color: #000;
 }
 
-.tracking-result>img {
+.tracking-result .trackingImage,
+.tracking-result .trackingMobile {
     display: block;
     margin: 40px auto 40px auto;
 }
@@ -59,10 +60,16 @@
     .tracking-result>img {
         width: 100%;
     }
+    .tracking-result .trackingMobile {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
     .tracking-result>img {
-        width: 100%;
+        width: 300px;
+    }
+    .tracking-result .trackingImage {
+        display: none;
     }
 }
