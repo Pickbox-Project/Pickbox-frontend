@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import trackingError from "../../Assets/images/trackingError.png";
+import "./TrackingError.css";
 
 const TrackingError = () => {
   return (
@@ -13,7 +14,7 @@ const TrackingError = () => {
         <AiOutlineSearch className="search-icon" />
         <input type="search" placeholder="8E368916IBD" />
       </div>
-      <div className="tracking-result">
+      <div className="tracking-result-error">
         <img src={trackingError} alt="Tracking Error Icon" />
         <p className="error-message">
           Incorrect tracking number. Please confirm number and try again
