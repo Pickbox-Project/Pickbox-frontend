@@ -14,15 +14,13 @@ function getItem(label, key, children, type) {
 }
 
 const items = [
-  getItem("How do I Register?", "sub1", [
-    getItem("Testing", "1"),
-  ]),
-  getItem("How do I Download Pickbox App?", "sub2", [
+  getItem("How do I Begin?", "sub1", [
     getItem(
-      "Testing",
-      "2"
+      "You only need to sign up, finish the on-boarding process, and an account will be created for you",
+      "1"
     ),
   ]),
+  getItem("How do I Download Pickbox App?", "sub2", [getItem("Testing", "2")]),
 ];
 const rootSubmenuKeys = ["sub1", "sub2"];
 const Faqs = () => {
@@ -47,7 +45,7 @@ const Faqs = () => {
           items={items}
         ></Menu>
       </div>
-      <ContactUs/>
+      <ContactUs />
     </div>
   );
 };
