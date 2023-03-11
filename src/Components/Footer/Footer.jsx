@@ -58,7 +58,7 @@ const Footer = () => {
         <div className="footer-connect">
           <h5 className="footer-title">Connect with us</h5>
           <div className="footer-icons">
-            <a href="##">
+            <a href="https://twitter.com/usepickbox">
               <AiFillTwitterCircle className="icon" />
             </a>
             <a href="##">
