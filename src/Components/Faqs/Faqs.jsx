@@ -26,10 +26,10 @@ const items = [
       "2"
     ),
   ]),
-  getItem("How do I Begin?", "sub3", [
+  getItem("Where can I send packages to?", "sub3", [
     getItem(
-      "You only need to sign up, finish the on-boarding process, and an account will be created for you",
-      "1"
+      "Presently we offer domestic shipment from markets in Lagos to our clients in Ibadan! Distance is not an obstacle for deliveries within these stipulated locations.",
+      "3"
     ),
   ]),
 ];

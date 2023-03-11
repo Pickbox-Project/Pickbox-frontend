@@ -55,7 +55,7 @@
 
 .ant-menu-title-content {
     text-overflow: unset !important;
-    overflow: scroll !important;
+    overflow: auto !important;
 }
 
 
