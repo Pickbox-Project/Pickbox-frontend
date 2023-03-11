@@ -14,17 +14,58 @@ function getItem(label, key, children, type) {
 }
 
 const items = [
-  getItem("How do I Register?", "sub1", [
-    getItem("Testing", "1"),
-  ]),
-  getItem("How do I Download Pickbox App?", "sub2", [
+  getItem("How do I Begin?", "sub1", [
     getItem(
-      "Testing",
+      "You only need to sign up, finish the on-boarding process, and an account will be created for you",
+      "1"
+    ),
+  ]),
+  getItem("What's the process of shipping? ", "sub2", [
+    getItem(
+      "Shipping with Pickbox is Simple. Simply log in and order a delivery that's all required.",
       "2"
     ),
   ]),
+  getItem("Where can I send packages to?", "sub3", [
+    getItem(
+      "Presently we offer domestic shipment from markets in Lagos to our clients in Ibadan! Distance is not an obstacle for deliveries within these stipulated locations.",
+      "3"
+    ),
+  ]),
+  getItem("What type of items can be shipped via pickbox?", "sub4", [
+    getItem(
+      "We ship various kinds of items which vary in size and weight, except for items prohibited by law.",
+      "4"
+    ),
+  ]),
+  getItem("What will I be charged for?", "sub5", [
+    getItem(
+      "We will charge you based on the route and weight of your package. What are the payment method options? We have two payment options: Cash Payment and Credit or debit card.",
+      "5"
+    ),
+  ]),
+  getItem("Do you offer same day delivery service? ", "sub6", [
+    getItem(
+      "Our delivery time frame spans 12-48 hours after we have received your goods.",
+      "6"
+    ),
+  ]),
+  getItem("Why should I use pickbox?", "sub7", [
+    getItem(
+      "We are the first logistic company to offer affordable market to doorstep delivery services, we also offer every of our merchants 5-10% cashback on every order they send with pickbox.",
+      "7"
+    ),
+  ]),
 ];
-const rootSubmenuKeys = ["sub1", "sub2"];
+const rootSubmenuKeys = [
+  "sub1",
+  "sub2",
+  "sub3",
+  "sub4",
+  "sub5",
+  "sub6",
+  "sub7",
+];
 const Faqs = () => {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
@@ -47,7 +88,7 @@ const Faqs = () => {
           items={items}
         ></Menu>
       </div>
-      <ContactUs/>
+      <ContactUs />
     </div>
   );
 };

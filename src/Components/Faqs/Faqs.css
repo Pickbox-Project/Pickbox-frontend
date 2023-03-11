@@ -13,7 +13,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     width: 560px;
-    height: 540px;
+    height: 670px;
 }
 
 .faqs-text {
@@ -35,23 +35,37 @@
     padding-top: 2px;
 }
 
+.ant-menu .ant-menu-item {
+    white-space: normal !important;
+}
+
 .ant-menu .ant-menu-sub {
     background: #e6e6e6 !important;
     border-radius: 8px !important;
 }
 
+.ant-menu-item.ant-menu-item-only-child {
+    height: 80px !important;
+    padding-left: 20px !important;
+}
 
-/* 
+.ant-menu-item.ant-menu-item-active .ant-menu-item-selected {
+    background-color: #e6e6e6 !important;
+}
 
-.ant-menu-item {
-    height: 60px !important;
-    text-overflow: unset !important;
-    white-space: inherit !important;
+.ant-menu-item.ant-menu-item-active {
+    background-color: #e6e6e6 !important;
 }
 
 .ant-menu-title-content {
     text-overflow: unset !important;
+    line-height: 23px;
 }
+
+
+/* 
+
+
 .ant-menu-submenu-selected{
     color: #ff6600 !important;
 } */
