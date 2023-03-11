@@ -50,8 +50,22 @@ const items = [
       "6"
     ),
   ]),
+  getItem("Why should I use pickbox?", "sub7", [
+    getItem(
+      "We are the first logistic company to offer affordable market to doorstep delivery services, we also offer every of our merchants 5-10% cashback on every order they send with pickbox.",
+      "7"
+    ),
+  ]),
 ];
-const rootSubmenuKeys = ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"];
+const rootSubmenuKeys = [
+  "sub1",
+  "sub2",
+  "sub3",
+  "sub4",
+  "sub5",
+  "sub6",
+  "sub7",
+];
 const Faqs = () => {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
