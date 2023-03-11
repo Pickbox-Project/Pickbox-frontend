@@ -67,7 +67,7 @@ const Footer = () => {
             <a href="##">
               <AiFillInstagram className="icon" />
             </a>
-            <a href="##">
+            <a href="https://www.linkedin.com/company/pickbox-software-technologies-ltd/">
               <AiFillLinkedin className="icon" />
             </a>
           </div>
