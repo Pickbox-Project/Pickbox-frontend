@@ -20,9 +20,20 @@ const items = [
       "1"
     ),
   ]),
-  getItem("How do I Download Pickbox App?", "sub2", [getItem("Testing", "2")]),
+  getItem("What's the process of shipping? ", "sub2", [
+    getItem(
+      "Shipping with Pickbox is Simple. Simply log in and order a delivery that's all required.",
+      "2"
+    ),
+  ]),
+  getItem("How do I Begin?", "sub3", [
+    getItem(
+      "You only need to sign up, finish the on-boarding process, and an account will be created for you",
+      "1"
+    ),
+  ]),
 ];
-const rootSubmenuKeys = ["sub1", "sub2"];
+const rootSubmenuKeys = ["sub1", "sub2", "sub3"];
 const Faqs = () => {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
