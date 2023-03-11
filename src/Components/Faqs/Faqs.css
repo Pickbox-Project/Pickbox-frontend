@@ -40,18 +40,28 @@
     border-radius: 8px !important;
 }
 
-
-/* 
-
-.ant-menu-item {
+.ant-menu-item.ant-menu-item-only-child {
     height: 60px !important;
-    text-overflow: unset !important;
-    white-space: inherit !important;
+    padding-left: 20px !important;
+}
+
+.ant-menu-item.ant-menu-item-active .ant-menu-item-selected {
+    background-color: #e6e6e6 !important;
+}
+
+.ant-menu-item.ant-menu-item-active {
+    background-color: #e6e6e6 !important;
 }
 
 .ant-menu-title-content {
     text-overflow: unset !important;
+    overflow: scroll !important;
 }
+
+
+/* 
+
+
 .ant-menu-submenu-selected{
     color: #ff6600 !important;
 } */
