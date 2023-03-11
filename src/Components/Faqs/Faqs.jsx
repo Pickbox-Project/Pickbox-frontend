@@ -32,8 +32,20 @@ const items = [
       "3"
     ),
   ]),
+  getItem("What type of items can be shipped via pickbox?", "sub4", [
+    getItem(
+      "We ship various kinds of items which vary in size and weight, except for items prohibited by law.",
+      "4"
+    ),
+  ]),
+  getItem("What will I be charged for?", "sub5", [
+    getItem(
+      "We will charge you based on the route and weight of your package. What are the payment method options? We have two payment options: Cash Payment and Credit or debit card.",
+      "5"
+    ),
+  ]),
 ];
-const rootSubmenuKeys = ["sub1", "sub2", "sub3"];
+const rootSubmenuKeys = ["sub1", "sub2", "sub3", "sub4", "sub5"];
 const Faqs = () => {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
