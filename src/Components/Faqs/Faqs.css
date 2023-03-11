@@ -45,7 +45,7 @@
 }
 
 .ant-menu-item.ant-menu-item-only-child {
-    height: 60px !important;
+    height: 80px !important;
     padding-left: 20px !important;
 }
 
@@ -59,7 +59,7 @@
 
 .ant-menu-title-content {
     text-overflow: unset !important;
-    overflow: auto !important;
+    line-height: 23px;
 }
 
 
