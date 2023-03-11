@@ -44,8 +44,14 @@ const items = [
       "5"
     ),
   ]),
+  getItem("Do you offer same day delivery service? ", "sub6", [
+    getItem(
+      "Our delivery time frame spans 12-48 hours after we have received your goods.",
+      "6"
+    ),
+  ]),
 ];
-const rootSubmenuKeys = ["sub1", "sub2", "sub3", "sub4", "sub5"];
+const rootSubmenuKeys = ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"];
 const Faqs = () => {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
