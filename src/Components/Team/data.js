@@ -40,8 +40,8 @@ export const teamsData = [
   {
     id: 6,
     teamMemberImage: johnImage,
-    teamMemberName: "Name Surname",
-    teamMemberRole: "Position",
+    teamMemberName: "John Olugbemi",
+    teamMemberRole: "Mobile App Engineer",
   },
   {
     id: 7,
