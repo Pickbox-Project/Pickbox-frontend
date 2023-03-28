@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <div className="pickbox-logo">
-        <img src={pickboxLogo} alt="Pickbox Logo" />
+       <a href="/"> <img src={pickboxLogo} alt="Pickbox Logo" /></a>
       </div>
       <div className="nav-list">
         <ul>
