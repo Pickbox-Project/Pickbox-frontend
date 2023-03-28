@@ -32,7 +32,7 @@ const AboutUs = () => {
         </div>
       </div>
       <MissionVision />
-      <Founders />
+      {/* <Founders /> */}
       <Team />
     </div>
   );
