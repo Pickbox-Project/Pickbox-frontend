@@ -1,75 +1,75 @@
 .tracking-container {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
-.tracking-text>h3 {
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    margin-bottom: 15px;
+.tracking-text > h3 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
-.tracking-text>p {
-    font-family: "DM Sans";
-    font-size: 19px;
+.tracking-text > p {
+  font-family: "DM Sans";
+  font-size: 19px;
 }
 
-.tracking-input>input {
-    width: 350px;
-    height: 40px;
-    padding: 0px 0px 0px 30px;
-    position: relative;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.14);
+.tracking-input > input {
+  width: 350px;
+  height: 40px;
+  padding: 0px 0px 0px 30px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 .search-icon {
-    position: absolute;
-    z-index: 9999;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 6px;
+  position: absolute;
+  z-index: 999;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 6px;
 }
 
 .search-icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.tracking-input>input:focus {
-    outline: none;
+.tracking-input > input:focus {
+  outline: none;
 }
 
-.tracking-input>input::placeholder {
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
-    color: #000;
+.tracking-input > input::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #000;
 }
 
 .tracking-result .trackingImage,
 .tracking-result .trackingMobile {
-    display: block;
-    margin: 40px auto 40px auto;
+  display: block;
+  margin: 40px auto 40px auto;
 }
 
 @media (min-width: 768px) {
-    .tracking-result>img {
-        width: 100%;
-    }
-    .tracking-result .trackingMobile {
-        display: none;
-    }
+  .tracking-result > img {
+    width: 100%;
+  }
+  .tracking-result .trackingMobile {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
-    .tracking-result>img {
-        width: 300px;
-    }
-    .tracking-result .trackingImage {
-        display: none;
-    }
+  .tracking-result > img {
+    width: 300px;
+  }
+  .tracking-result .trackingImage {
+    display: none;
+  }
 }
