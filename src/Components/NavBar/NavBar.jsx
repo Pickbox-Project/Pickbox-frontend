@@ -16,7 +16,10 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <div className="pickbox-logo">
-       <a href="/"> <img src={pickboxLogo} alt="Pickbox Logo" /></a>
+        <a href="/">
+          {" "}
+          <img src={pickboxLogo} alt="Pickbox Logo" />
+        </a>
       </div>
       <div className="nav-list">
         <ul>
@@ -75,6 +78,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/"
+                onClick={onClose}
                 className="nav-links"
                 style={({ isActive }) => ({
                   borderBottom: isActive ? "1px solid #d45500" : "none",
@@ -85,6 +89,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
+                onClick={onClose}
                 to="/tracking"
                 className="nav-links"
                 style={({ isActive }) => ({
@@ -96,6 +101,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
+                onClick={onClose}
                 to="/aboutus"
                 className="nav-links"
                 style={({ isActive }) => ({
@@ -107,6 +113,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
+                onClick={onClose}
                 to="/contactus"
                 className="nav-links"
                 style={({ isActive }) => ({

@@ -1,71 +1,69 @@
 .faqs-contact-container {
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 90px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 90px;
 }
 
 .faqs-container {
-    background: #fff;
-    padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    width: 560px;
-    height: 670px;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 560px;
+  height: 670px;
 }
 
 .faqs-text {
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: #ff6600;
-    margin-bottom: 40px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ff6600;
+  margin-bottom: 40px;
 }
 
 .ant-menu-root.ant-menu-inline {
-    border-inline-end: none !important;
+  border-inline-end: none !important;
 }
 
 .ant-menu-submenu {
-    background: #e6e6e6 !important;
-    margin-bottom: 20px;
-    padding-top: 2px;
+  background: #e6e6e6 !important;
+  margin-bottom: 20px;
+  padding-top: 2px;
 }
 
 .ant-menu .ant-menu-item {
-    white-space: normal !important;
+  white-space: normal !important;
 }
 
 .ant-menu .ant-menu-sub {
-    background: #e6e6e6 !important;
-    border-radius: 8px !important;
+  background: #e6e6e6 !important;
+  border-radius: 8px !important;
 }
 
 .ant-menu-item.ant-menu-item-only-child {
-    height: 80px !important;
-    padding-left: 20px !important;
+  height: 80px !important;
+  padding-left: 20px !important;
 }
 
 .ant-menu-item.ant-menu-item-active .ant-menu-item-selected {
-    background-color: #e6e6e6 !important;
+  background-color: #e6e6e6 !important;
 }
 
 .ant-menu-item.ant-menu-item-active {
-    background-color: #e6e6e6 !important;
+  background-color: #e6e6e6 !important;
 }
 
 .ant-menu-title-content {
-    text-overflow: unset !important;
-    line-height: 23px;
+  text-overflow: unset !important;
+  line-height: 23px;
 }
 
-
-/* 
-
-
-.ant-menu-submenu-selected{
-    color: #ff6600 !important;
-} */
+@media (max-width: 600px) {
+  .faqs-container {
+    width: 340px;
+  }
+}
