@@ -12,8 +12,8 @@ const Team = () => {
       <div className="team-text">
         <h3>The PickBox Team</h3>
         <h5>
-        The Pickbox team is made up of very agile of seven people <br/>
-who collaborate to conceive, produce, test, and deliver a product piece in a short period of time
+        The pickbox team is made up of individuals <br/>
+who collaborate to conceive, produce, test, and deliver a product piece in a short perod of time
         </h5>
       </div>
       <div className="team-gallery">
