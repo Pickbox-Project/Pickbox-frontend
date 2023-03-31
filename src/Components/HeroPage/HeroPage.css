@@ -1,15 +1,12 @@
 .heropage-container {
   background: url("../../Assets/images/Hero\ section\ background.png");
   height: 598px;
+  margin-top: 60px;
 }
 
 .heropage-details {
   display: flex;
   justify-content: center;
-}
-
-.heropage-image {
-  margin-top: 60px;
 }
 
 .heropage-text {
