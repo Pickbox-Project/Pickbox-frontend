@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState, useEffect } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroPage from "./Components/HeroPage/HeroPage";
@@ -12,9 +13,19 @@ import MoreDetails from "./Components/MoreDetails/MoreDetails";
 import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
 import TrackingDelivered from "./Components/TrackingDelivered/TrackingDelivered";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import loaderImage from "./Assets/images/preloader.png"
+import pickboxLogo from "./Assets/images/pickbox logo transparent.png"
 import TrackingError from "./Components/TrackingError/TrackingError";
 
 function App() {
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000)
+  }, [])
   return (
     <div>
       <Router>
@@ -25,9 +36,14 @@ function App() {
             path="/"
             element={
               <div>
+                {loading ? <div className="preloader">
+                    <img src={pickboxLogo} alt="pickbox logo" className="pickbox-logo"/>
+                    <img src={loaderImage} alt="loader"/>
+                </div> : <div>
                 <HeroPage />
                 <Steps />
                 <Solution />
+                  </div>}
               </div>
             }
           />
