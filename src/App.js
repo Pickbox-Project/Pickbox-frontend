@@ -37,8 +37,7 @@ function App() {
             element={
               <div>
                 {loading ? <div className="preloader">
-                    <img src={pickboxLogo} alt="pickbox logo" className="pickbox-logo"/>
-                    <img src={loaderImage} alt="loader"/>
+                    <img src={loaderImage} alt="loader" className="loader"/>
                 </div> : <div>
                 <HeroPage />
                 <Steps />
@@ -47,7 +46,9 @@ function App() {
               </div>
             }
           />
-          <Route exact path="/contactus" element={<Faqs />}></Route>
+          <Route exact path="/contactus" element={loading ? <div className="preloader">
+                    <img src={loaderImage} alt="loader" className="loader"/>
+                </div> : <Faqs/>}></Route>
           <Route exact path="/tracking" element={<Tracking />}></Route>
           <Route exact path="/aboutus" element={<AboutUs />}></Route>
           <Route
