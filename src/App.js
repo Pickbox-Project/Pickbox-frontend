@@ -50,7 +50,9 @@ function App() {
                     <img src={loaderImage} alt="loader" className="loader"/>
                 </div> : <Faqs/>}></Route>
           <Route exact path="/tracking" element={<Tracking />}></Route>
-          <Route exact path="/aboutus" element={<AboutUs />}></Route>
+          <Route exact path="/aboutus" element={loading ? <div className="preloader">
+                    <img src={loaderImage} alt="loader" className="loader"/>
+                </div> : <AboutUs/>}></Route>
           <Route
             exact
             path="/tracking-waiting"
