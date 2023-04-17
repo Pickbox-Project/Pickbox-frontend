@@ -1,6 +1,30 @@
 import React from "react";
 import "./ContactUs.css";
+import axios from "axios";
 const ContactUs = () => {
+  const message = "Testing the Contact Endpoint";
+  const handleSubmitContactForm = async (e) => {
+    e.preventDefault();
+    try {
+      const contactRequest = await axios.post(
+        `https://pickbox.azurewebsites.net/api/ContactForm/Submit-contactForm`,
+        {
+          Name: "Test",
+          Email: "Test@Test",
+          Message: `${message}`,
+        },
+        {
+          headers: {
+            accept: "*/*",
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(contactRequest);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="contact-us-container">
       <h5 className="contact-us-text">Contact Us</h5>
@@ -27,7 +51,9 @@ const ContactUs = () => {
           rows="5"
           placeholder="Write your message..."
         ></textarea>
-        <button type="submit">Send message</button>
+        <button type="submit" onClick={handleSubmitContactForm}>
+          Send message
+        </button>
       </form>
     </div>
   );
