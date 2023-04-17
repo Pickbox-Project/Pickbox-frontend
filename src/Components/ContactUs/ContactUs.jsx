@@ -35,6 +35,12 @@ const ContactUs = () => {
           }
         );
         console.log(contactRequest);
+        if (contactRequest.status === 200) {
+          messageApi.open({
+            type: "success",
+            content: `${contactRequest.data.message}`,
+          });
+        }
       } catch (error) {
         console.log(error);
       }
