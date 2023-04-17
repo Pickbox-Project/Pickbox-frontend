@@ -2,8 +2,12 @@ import React, { useRef } from "react";
 import "./ContactUs.css";
 import axios from "axios";
 const ContactUs = () => {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
   const message = "Testing the Contact Endpoint";
   const handleSubmitContactForm = async (e) => {
+    console.log(nameRef.current.value);
     e.preventDefault();
     try {
       const contactRequest = await axios.post(
@@ -31,6 +35,7 @@ const ContactUs = () => {
       <form className="contact-form">
         <label htmlFor="name-input">Name</label>
         <input
+          ref={nameRef}
           type="text"
           name=""
           id="name-input"
@@ -38,6 +43,7 @@ const ContactUs = () => {
         />
         <label htmlFor="email-input">Email</label>
         <input
+          ref={emailRef}
           type="email"
           name=""
           id="email-input"
@@ -45,6 +51,7 @@ const ContactUs = () => {
         />
         <label htmlFor="message-textarea">Message</label>
         <textarea
+          ref={messageRef}
           name=""
           id=""
           cols="20"
