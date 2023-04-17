@@ -74,6 +74,10 @@
   border-radius: 4px;
 }
 
+.contact-form > button:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .contact-us-container {
     width: 370px;
