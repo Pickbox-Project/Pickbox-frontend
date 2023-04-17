@@ -35,7 +35,6 @@ const ContactUs = () => {
         <input
           ref={nameRef}
           type="text"
-          name=""
           id="name-input"
           required
           placeholder="Write your name"
