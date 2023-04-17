@@ -8,6 +8,8 @@ const ContactUs = () => {
   const message = "Testing the Contact Endpoint";
   const handleSubmitContactForm = async (e) => {
     console.log(nameRef.current.value);
+    console.log(emailRef.current.value);
+    console.log(messageRef.current.value);
     e.preventDefault();
     try {
       const contactRequest = await axios.post(
@@ -39,18 +41,20 @@ const ContactUs = () => {
           type="text"
           name=""
           id="name-input"
+          required
           placeholder="Write your name"
         />
         <label htmlFor="email-input">Email</label>
         <input
           ref={emailRef}
           type="email"
-          name=""
+          required
           id="email-input"
           placeholder="Enter your email"
         />
         <label htmlFor="message-textarea">Message</label>
         <textarea
+          required
           ref={messageRef}
           name=""
           id=""
