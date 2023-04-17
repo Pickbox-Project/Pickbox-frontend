@@ -5,19 +5,15 @@ const ContactUs = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
-  const message = "Testing the Contact Endpoint";
   const handleSubmitContactForm = async (e) => {
-    console.log(nameRef.current.value);
-    console.log(emailRef.current.value);
-    console.log(messageRef.current.value);
     e.preventDefault();
     try {
       const contactRequest = await axios.post(
         `https://pickbox.azurewebsites.net/api/ContactForm/Submit-contactForm`,
         {
-          Name: "Test",
-          Email: "Test@Test",
-          Message: `${message}`,
+          Name: `${nameRef.current.value}`,
+          Email: `${emailRef.current.value}`,
+          Message: `${messageRef.current.value}`,
         },
         {
           headers: {
