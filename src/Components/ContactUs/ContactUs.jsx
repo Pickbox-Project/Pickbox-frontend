@@ -51,8 +51,6 @@ const ContactUs = () => {
         <textarea
           required
           ref={messageRef}
-          name=""
-          id=""
           cols="20"
           rows="5"
           placeholder="Write your message..."
