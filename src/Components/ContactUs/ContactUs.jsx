@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import "./ContactUs.css";
+import { message } from "antd";
 import axios from "axios";
 const ContactUs = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
+  const [messageApi, contextHolder] = message.useMessage();
   const handleSubmitContactForm = async (e) => {
     e.preventDefault();
     if (
@@ -12,7 +14,10 @@ const ContactUs = () => {
       emailRef.current.value === "" ||
       messageRef.current.value === ""
     ) {
-      console.log("Kindly Input your Details");
+      messageApi.open({
+        type: "error",
+        content: "Kindly Input all Contact Details",
+      });
     } else {
       try {
         const contactRequest = await axios.post(
@@ -63,6 +68,7 @@ const ContactUs = () => {
           rows="5"
           placeholder="Write your message..."
         ></textarea>
+        {contextHolder}
         <button type="submit" onClick={handleSubmitContactForm}>
           Send message
         </button>
