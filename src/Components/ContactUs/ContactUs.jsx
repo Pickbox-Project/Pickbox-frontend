@@ -7,24 +7,32 @@ const ContactUs = () => {
   const messageRef = useRef();
   const handleSubmitContactForm = async (e) => {
     e.preventDefault();
-    try {
-      const contactRequest = await axios.post(
-        `https://pickbox.azurewebsites.net/api/ContactForm/Submit-contactForm`,
-        {
-          Name: `${nameRef.current.value}`,
-          Email: `${emailRef.current.value}`,
-          Message: `${messageRef.current.value}`,
-        },
-        {
-          headers: {
-            accept: "*/*",
-            "Content-Type": "multipart/form-data",
+    if (
+      nameRef.current.value === "" ||
+      emailRef.current.value === "" ||
+      messageRef.current.value === ""
+    ) {
+      console.log("Kindly Input your Details");
+    } else {
+      try {
+        const contactRequest = await axios.post(
+          `https://pickbox.azurewebsites.net/api/ContactForm/Submit-contactForm`,
+          {
+            Name: `${nameRef.current.value}`,
+            Email: `${emailRef.current.value}`,
+            Message: `${messageRef.current.value}`,
           },
-        }
-      );
-      console.log(contactRequest);
-    } catch (error) {
-      console.log(error);
+          {
+            headers: {
+              accept: "*/*",
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        console.log(contactRequest);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
   return (
@@ -36,7 +44,7 @@ const ContactUs = () => {
           ref={nameRef}
           type="text"
           id="name-input"
-          required
+          required={true}
           placeholder="Write your name"
         />
         <label htmlFor="email-input">Email</label>
