@@ -67,4 +67,7 @@
   .faqs-container {
     width: 340px;
   }
+  .faqs-contact-container {
+    padding: 20px;
+  }
 }
