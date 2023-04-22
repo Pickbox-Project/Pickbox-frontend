@@ -16,7 +16,7 @@ const Tracking = () => {
         `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
       );
       if (getTrackingdata.data.succeeded === false) {
-        navigate("/TrackingError");
+        navigate("/tracking-error");
       }
       console.log(getTrackingdata);
     } catch (e) {
