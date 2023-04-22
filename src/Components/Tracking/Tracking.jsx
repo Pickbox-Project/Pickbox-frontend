@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Tracking.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import entertrackingNumberImage from "../../Assets/images/enter-tracking number.png";
@@ -6,6 +6,18 @@ import trackingMobile from "../../Assets/images/tracking-default-mobile.png";
 import axios from "axios";
 
 const Tracking = () => {
+  const searchRef = useRef();
+  const getTrackingResult = async () => {
+    const searchValue = searchRef.current.value;
+    try {
+      const getTrackingdata = await axios.get(
+        `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
+      );
+      console.log(getTrackingdata);
+    } catch (e) {
+      console.error(e);
+    }
+  };
   return (
     <div className="tracking-container">
       <div className="tracking-text">
@@ -13,8 +25,8 @@ const Tracking = () => {
         <p>Please enter your tracking number</p>
       </div>
       <div className="tracking-input">
-        <AiOutlineSearch className="search-icon" />
-        <input type="search" placeholder="Search" />
+        <AiOutlineSearch className="search-icon" onClick={getTrackingResult} />
+        <input type="search" placeholder="Search" ref={searchRef} />
       </div>
       <div className="tracking-result">
         <img
