@@ -1,13 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
-.preloader{
-  background: #FFF;
+
+.preloader {
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,15 +17,18 @@ body{
   width: 100%;
   height: 100vh;
 }
-.loader{
+
+.loader {
   opacity: 0;
   width: 220px;
   animation: slide-out 4s;
 }
+
 @keyframes slide-out {
-  from{
+  from {
     transform: translateX(-100px);
-  }to{
+  }
+  to {
     transform: translate(100%);
     opacity: 1;
   }
