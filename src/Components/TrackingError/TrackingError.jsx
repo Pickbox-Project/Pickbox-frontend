@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import trackingError from "../../Assets/images/trackingError.png";
 import "./TrackingError.css";
 
