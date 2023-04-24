@@ -33,6 +33,7 @@ const Tracking = () => {
       <div className="tracking-input">
         <AiOutlineSearch className="search-icon" onClick={getTrackingResult} />
         <input type="search" placeholder="Search" ref={searchRef} />
+        <p className="await-result"></p>
       </div>
       <div className="tracking-result">
         <img
