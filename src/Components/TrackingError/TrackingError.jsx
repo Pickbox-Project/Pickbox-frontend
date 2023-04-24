@@ -12,7 +12,8 @@ const TrackingError = () => {
       <div className="tracking-result-error">
         <img src={trackingError} alt="Tracking Error Icon" />
         <p className="error-message">
-          Incorrect tracking number. Please confirm number and try again
+          Incorrect tracking number. Please confirm your Tracking number and try
+          again
         </p>
       </div>
     </div>

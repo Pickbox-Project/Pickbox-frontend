@@ -8,16 +8,20 @@ import axios from "axios";
 
 const Tracking = () => {
   const searchRef = useRef();
+  const awaitTextRef = useRef();
   const navigate = useNavigate();
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
+
     try {
+      awaitTextRef.current.innerHTML = "Searching..."
       const getTrackingdata = await axios.get(
         `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
       );
       if (getTrackingdata.data.succeeded === false) {
         navigate("/tracking-error");
       }
+      awaitTextRef.current.innerHTML = ""
       console.log(getTrackingdata);
     } catch (e) {
       console.error(e);
@@ -32,6 +36,7 @@ const Tracking = () => {
       <div className="tracking-input">
         <AiOutlineSearch className="search-icon" onClick={getTrackingResult} />
         <input type="search" placeholder="Search" ref={searchRef} />
+        <p className="await-result" ref={awaitTextRef}></p>
       </div>
       <div className="tracking-result">
         <img
