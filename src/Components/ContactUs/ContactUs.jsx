@@ -6,6 +6,7 @@ const ContactUs = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
+  const contactBtn = useRef();
   const [messageApi, contextHolder] = message.useMessage();
   const handleSubmitContactForm = async (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ const ContactUs = () => {
       });
     } else {
       try {
+        contactBtn.current.innerHTML = "Kindly Wait...";
         const contactRequest = await axios.post(
           `https://pickbox.azurewebsites.net/api/ContactForm/Submit-contactForm`,
           {
@@ -40,6 +42,7 @@ const ContactUs = () => {
             type: "success",
             content: `${contactRequest.data.message}`,
           });
+          contactBtn.current.innerHTML = "Send Message";
         }
       } catch (error) {
         console.log(error);
@@ -75,7 +78,11 @@ const ContactUs = () => {
           placeholder="Write your message..."
         ></textarea>
         {contextHolder}
-        <button type="submit" onClick={handleSubmitContactForm}>
+        <button
+          type="submit"
+          onClick={handleSubmitContactForm}
+          ref={contactBtn}
+        >
           Send message
         </button>
       </form>
