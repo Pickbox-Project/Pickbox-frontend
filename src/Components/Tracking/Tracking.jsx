@@ -8,7 +8,7 @@ import axios from "axios";
 
 const Tracking = () => {
   const searchRef = useRef();
-  const textRef = useRef();
+  const awaitTextRef = useRef();
   const navigate = useNavigate();
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
@@ -34,7 +34,7 @@ const Tracking = () => {
       <div className="tracking-input">
         <AiOutlineSearch className="search-icon" onClick={getTrackingResult} />
         <input type="search" placeholder="Search" ref={searchRef} />
-        <p className="await-result" ref={textRef}></p>
+        <p className="await-result" ref={awaitTextRef}></p>
       </div>
       <div className="tracking-result">
         <img
