@@ -12,6 +12,7 @@ const Tracking = () => {
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
     try {
+      console.log("Searching...");
       const getTrackingdata = await axios.get(
         `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
       );
