@@ -12,14 +12,16 @@ const Tracking = () => {
   const navigate = useNavigate();
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
+
     try {
-      console.log("Searching...");
+      awaitTextRef.current.innerHTML = "Searching..."
       const getTrackingdata = await axios.get(
         `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
       );
       if (getTrackingdata.data.succeeded === false) {
         navigate("/tracking-error");
       }
+      awaitTextRef.current.innerHTML = ""
       console.log(getTrackingdata);
     } catch (e) {
       console.error(e);
