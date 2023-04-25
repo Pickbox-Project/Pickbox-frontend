@@ -20,6 +20,8 @@ const Tracking = () => {
       );
       if (getTrackingdata.data.succeeded === false) {
         navigate("/tracking-error");
+      }else if(getTrackingResult.data.trackingStatus === 1){
+        navigate("/tracking-waiting")
       }
       awaitTextRef.current.innerHTML = ""
       console.log(getTrackingdata);
