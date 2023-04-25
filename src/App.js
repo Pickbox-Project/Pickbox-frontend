@@ -75,7 +75,11 @@ function App() {
           <Route exact path="/more-details" element={<MoreDetails />}></Route>
           <Route exact path="/tracking-error" element={<TrackingError/>}></Route>
         </Routes>
-        <Footer />
+        <div>
+          {loading? <div className="preloader">
+                    <img src={loaderImage} alt="loader" className="loader"/>
+                </div> :  <div><Footer/></div>}
+        </div>
       </Router>
     </div>
   );
