@@ -35,6 +35,8 @@
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .contact-form > input:focus {
@@ -52,6 +54,8 @@
   border: none;
   margin-top: 6px;
   padding: 15px 0px 0px 5px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
 }
 
 .contact-form > textarea::placeholder {
