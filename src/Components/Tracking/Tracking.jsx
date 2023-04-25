@@ -14,14 +14,16 @@ const Tracking = () => {
     const searchValue = searchRef.current.value;
 
     try {
-      awaitTextRef.current.innerHTML = "Searching..."
+      awaitTextRef.current.innerHTML = "Searching...";
       const getTrackingdata = await axios.get(
         `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
       );
       if (getTrackingdata.data.succeeded === false) {
         navigate("/tracking-error");
+      } else if (getTrackingdata.data.data.trackingStatus === 1) {
+        navigate("/tracking-waiting");
       }
-      awaitTextRef.current.innerHTML = ""
+      awaitTextRef.current.innerHTML = "";
       console.log(getTrackingdata);
     } catch (e) {
       console.error(e);
