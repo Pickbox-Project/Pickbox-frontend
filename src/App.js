@@ -34,7 +34,6 @@ function App() {
                     <img src={loaderImage} alt="loader" className="loader"/>
                 </div> :  <div><NavBar /></div>}
         </div>
-        {/* <NavBar /> */}
         <Routes>
           <Route
             exact
