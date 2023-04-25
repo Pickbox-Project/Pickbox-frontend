@@ -23,6 +23,12 @@ const Tracking = () => {
       } else if (getTrackingdata.data.data.trackingStatus === 1) {
         navigate("/tracking-waiting");
       }
+      else if (getTrackingdata.data.data.trackingStatus === 2) {
+        navigate("/tracking-in-transit");
+      }
+      else if (getTrackingdata.data.data.trackingStatus === 3) {
+        navigate("/tracking-delivered");
+      }
       awaitTextRef.current.innerHTML = "";
       console.log(getTrackingdata);
     } catch (e) {
