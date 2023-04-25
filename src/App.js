@@ -29,7 +29,12 @@ function App() {
   return (
     <div>
       <Router>
-        <NavBar />
+        <div>
+          {loading? <div className="preloader">
+                    <img src={loaderImage} alt="loader" className="loader"/>
+                </div> :  <div><NavBar /></div>}
+        </div>
+        {/* <NavBar /> */}
         <Routes>
           <Route
             exact
