@@ -1,10 +1,12 @@
 import React, { useContext, useEffect } from "react";
 import "./MoreDetails.css";
+import { useNavigate } from "react-router-dom";
 import { searchContext } from "../../Context/searchContext";
 import { AiFillPhone } from "react-icons/ai";
 import axios from "axios";
 
 const MoreDetails = () => {
+  const navigate = useNavigate();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
@@ -13,7 +15,11 @@ const MoreDetails = () => {
     console.log(getTrackingdata.data);
   };
   useEffect(() => {
-    getTrackingDetails();
+    if (trackingCode) {
+      getTrackingDetails();
+    } else {
+      navigate("/tracking");
+    }
   }, [trackingCode]);
   return (
     <div className="more-details-container">
