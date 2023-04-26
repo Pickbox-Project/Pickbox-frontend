@@ -8,7 +8,7 @@ const ContactUs = () => {
   const messageRef = useRef();
   const contactBtn = useRef();
   const [messageApi, contextHolder] = message.useMessage();
-  const [api, secondContextHolder] = notification.useNotification()
+  const [api, secondContextHolder] = notification.useNotification();
   const handleSubmitContactForm = async (e) => {
     e.preventDefault();
     if (
@@ -16,17 +16,14 @@ const ContactUs = () => {
       emailRef.current.value === "" ||
       messageRef.current.value === ""
     ) {
-      messageApi.open({
-        type: "error",
-        content: "Kindly Input all Contact Details",
-      });
-      const openNotification = (placement) =>{
-        api.warning({
+      const openNotification = (placement) => {
+        api.error({
           message: `Error!`,
-          description: `Kindly Input all Contact Details`,placement
-        })
-      }
-      openNotification('bottomRight')
+          description: `Kindly Input all Contact Details`,
+          placement,
+        });
+      };
+      openNotification("bottomRight");
     } else {
       try {
         contactBtn.current.innerHTML = "Kindly Wait...";
@@ -46,13 +43,14 @@ const ContactUs = () => {
         );
         console.log(contactRequest);
         if (contactRequest.status === 200) {
-          const openNotification = (placement) =>{
+          const openNotification = (placement) => {
             api.success({
               message: `Successfully Done`,
-              description: `${contactRequest.data.message}`,placement
-            })
-          }
-          openNotification('bottomRight')
+              description: `${contactRequest.data.message}`,
+              placement,
+            });
+          };
+          openNotification("bottomRight");
           contactBtn.current.innerHTML = "Send Message";
         }
       } catch (error) {
