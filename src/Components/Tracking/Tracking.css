@@ -18,6 +18,7 @@
 .tracking-text > p {
   font-family: "DM Sans";
   font-size: 19px;
+  text-align: center;
 }
 
 .tracking-input > input {
