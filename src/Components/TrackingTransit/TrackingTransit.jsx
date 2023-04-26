@@ -13,8 +13,12 @@ const TrackingTransit = () => {
     navigate("/more-details");
   };
   useEffect(() => {
-    console.log(trackingCode);
-  }, []);
+    if (trackingCode) {
+      console.log(trackingCode);
+    } else {
+      navigate("/tracking");
+    }
+  }, [trackingCode]);
   return (
     <div className="tracking-container">
       <div className="tracking-text">
