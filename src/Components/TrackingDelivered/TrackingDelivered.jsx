@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import trackingDelivered from "../../Assets/images/tracking-delivered.png";
 import trackingDeliveredMobile from "../../Assets/images/trackingDeliveredMobile.png";
-
+import { searchContext } from "../../Context/searchContext";
 const TrackingDelivered = () => {
   const navigate = useNavigate();
+  const { trackingCode, setTrackingCode } = useContext(searchContext);
   const handleNavigate = () => {
     navigate("/more-details");
   };
