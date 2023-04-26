@@ -20,6 +20,13 @@ const ContactUs = () => {
         type: "error",
         content: "Kindly Input all Contact Details",
       });
+      const openNotification = (placement) =>{
+        api.warning({
+          message: `Error!`,
+          description: `Kindly Input all Contact Details`,placement
+        })
+      }
+      openNotification('bottomRight')
     } else {
       try {
         contactBtn.current.innerHTML = "Kindly Wait...";
