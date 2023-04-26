@@ -18,7 +18,7 @@ const TrackingTransit = () => {
     } else {
       navigate("/tracking");
     }
-  }, [trackingCode]);
+  }, []);
   return (
     <div className="tracking-container">
       <div className="tracking-text">
