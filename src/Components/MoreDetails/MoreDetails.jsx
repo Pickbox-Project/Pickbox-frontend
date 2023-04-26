@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./MoreDetails.css";
 import { useNavigate } from "react-router-dom";
 import { searchContext } from "../../Context/searchContext";
@@ -8,11 +8,19 @@ import axios from "axios";
 const MoreDetails = () => {
   const navigate = useNavigate();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
+  const [bookStatus, setBookStatus] = useState("")
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
       `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${trackingCode}`
     );
     console.log(getTrackingdata.data);
+    if(getTrackingdata.data.data.trackingStatus === 1){
+      setBookStatus("Waiting")
+    }else if(getTrackingdata.data.data.trackingStatus === 2){
+      setBookStatus("In Transit")
+    }else if(getTrackingdata.data.data.trackingStatus === 3){
+      setBookStatus("Delivered")
+    }
   };
   useEffect(() => {
     if (trackingCode) {
@@ -30,7 +38,7 @@ const MoreDetails = () => {
             Tracking Number: <span>{trackingCode}</span>
           </h5>
           <h5>
-            Status: <span className="result">In transit</span>
+            Status: <span className="result">{bookStatus}</span>
           </h5>
           <h4 className="sub-main-text">Receiver's information</h4>
           <form className="tracking-form">
