@@ -1,15 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef ,useContext} from "react";
 import "./Tracking.css";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import entertrackingNumberImage from "../../Assets/images/enter-tracking number.png";
 import trackingMobile from "../../Assets/images/tracking-default-mobile.png";
 import axios from "axios";
+import { searchContext } from "../../Context/searchContext";
 
 const Tracking = () => {
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
+  const {trackingCode, setTrackingCode} = useContext(searchContext)
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
     try {
@@ -20,10 +22,13 @@ const Tracking = () => {
       if (getTrackingdata.data.succeeded === false) {
         navigate("/tracking-error");
       } else if (getTrackingdata.data.data.trackingStatus === 1) {
+        setTrackingCode(searchValue)
         navigate("/tracking-waiting");
       } else if (getTrackingdata.data.data.trackingStatus === 2) {
+        setTrackingCode(searchValue)
         navigate("/tracking-in-transit");
       } else if (getTrackingdata.data.data.trackingStatus === 3) {
+        setTrackingCode(searchValue)
         navigate("/tracking-delivered");
       }
       awaitTextRef.current.innerHTML = "";

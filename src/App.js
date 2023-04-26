@@ -30,6 +30,7 @@ function App() {
   }, [])
   return (
     <div>
+      <searchContext.Provider value={[trackingCode, setTrackingCode]}>
       <Router>
         <div>
           {loading? <div className="preloader">
@@ -55,7 +56,7 @@ function App() {
           <Route exact path="/contactus" element={loading ? <div className="preloader">
                     <img src={loaderImage} alt="loader" className="loader"/>
                 </div> : <Faqs/>}></Route>
-                <searchContext.Provider value={[trackingCode, setTrackingCode]}>
+                
           <Route exact path="/tracking" element={<Tracking />}></Route>
           <Route exact path="/aboutus" element={loading ? <div className="preloader">
                     <img src={loaderImage} alt="loader" className="loader"/>
@@ -76,7 +77,6 @@ function App() {
             element={<TrackingDelivered />}
           ></Route>
           <Route exact path="/more-details" element={<MoreDetails />}></Route>
-          </searchContext.Provider>
           <Route exact path="/tracking-error" element={<TrackingError/>}></Route>
         </Routes>
         <div>
@@ -85,6 +85,7 @@ function App() {
                 </div> :  <div><Footer/></div>}
         </div>
       </Router>
+      </searchContext.Provider>
     </div>
   );
 }
