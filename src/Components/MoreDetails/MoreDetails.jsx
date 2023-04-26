@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./MoreDetails.css";
+import { searchContext } from "../../Context/searchContext";
 import { AiFillPhone } from "react-icons/ai";
+import axios from "axios";
 
 const MoreDetails = () => {
+  const [trackingCode, setTrackingCode] = useContext(searchContext);
+  const getTrackingDetails = async () => {
+    const getTrackingdata = await axios.get(
+      `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${trackingCode}`
+    );
+    console.log(getTrackingdata.data);
+  };
+  useEffect(() => {
+    getTrackingDetails();
+  }, [trackingCode]);
   return (
     <div className="more-details-container">
       <div className="more-details-info">
