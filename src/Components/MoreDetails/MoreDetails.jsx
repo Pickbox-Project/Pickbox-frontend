@@ -8,19 +8,25 @@ import axios from "axios";
 const MoreDetails = () => {
   const navigate = useNavigate();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
-  const [bookStatus, setBookStatus] = useState("")
+  const [bookStatus, setBookStatus] = useState("");
+  const [receiverName, setReceiverName] = useState("");
+  const [receiverDestination, setReceiverDestination] = useState("");
+  const [bookingPrice, setBookPrice] = useState(0);
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
       `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${trackingCode}`
     );
     console.log(getTrackingdata.data);
-    if(getTrackingdata.data.data.trackingStatus === 1){
-      setBookStatus("Waiting")
-    }else if(getTrackingdata.data.data.trackingStatus === 2){
-      setBookStatus("In Transit")
-    }else if(getTrackingdata.data.data.trackingStatus === 3){
-      setBookStatus("Delivered")
+    if (getTrackingdata.data.data.trackingStatus === 1) {
+      setBookStatus("Waiting");
+    } else if (getTrackingdata.data.data.trackingStatus === 2) {
+      setBookStatus("In Transit");
+    } else if (getTrackingdata.data.data.trackingStatus === 3) {
+      setBookStatus("Delivered");
     }
+    setReceiverName(getTrackingdata.data.data.receiverName);
+    setReceiverDestination(getTrackingdata.data.data.receiverLocation);
+    setBookPrice(getTrackingdata.data.data.bookingPrice);
   };
   useEffect(() => {
     if (trackingCode) {
@@ -40,15 +46,22 @@ const MoreDetails = () => {
           <h5>
             Status: <span className="result">{bookStatus}</span>
           </h5>
+          <h5>
+            Booking Price:{" "}
+            <span>
+              {bookingPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+            </span>
+          </h5>
           <h4 className="sub-main-text">Receiver's information</h4>
           <form className="tracking-form">
             <label htmlFor="name">Name</label>
-            <input type="text" placeholder="Mary Allison" id="name" />
+            <input type="text" defaultValue={receiverName} id="name" readOnly />
             <label htmlFor="destination">Destination</label>
             <input
               type="text"
-              placeholder="No 15 Olu road, Ibadan"
+              defaultValue={receiverDestination}
               id="destination"
+              readOnly
             />
             <label htmlFor="delivery-time">Expected delivery time</label>
             <input
