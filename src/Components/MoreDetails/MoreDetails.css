@@ -1,6 +1,6 @@
 .more-details-container {
   padding: 50px;
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 .more-details-info {
@@ -32,6 +32,11 @@
 .more-details-customer-info .result {
   color: #108afb;
   font-size: 18px;
+}
+
+.arrow-left {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .more-details-customer-info .sub-main-text {

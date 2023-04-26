@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 import "./MoreDetails.css";
 import { useNavigate } from "react-router-dom";
 import { searchContext } from "../../Context/searchContext";
@@ -28,17 +29,27 @@ const MoreDetails = () => {
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
   };
+  const handleNavigate = () => {
+    navigate("/tracking");
+  };
   useEffect(() => {
     if (trackingCode) {
       getTrackingDetails();
     } else {
       navigate("/tracking");
     }
-  }, [trackingCode]);
+  }, [
+    trackingCode,
+    bookStatus,
+    receiverName,
+    receiverDestination,
+    bookingPrice,
+  ]);
   return (
     <div className="more-details-container">
       <div className="more-details-info">
         <div className="more-details-customer-info">
+          <AiOutlineArrowLeft className="arrow-left" onClick={handleNavigate} />
           <h4 className="main-text">Tracking details</h4>
           <h5>
             Tracking Number: <span>{trackingCode}</span>
