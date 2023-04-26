@@ -11,7 +11,7 @@ const Tracking = () => {
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
-  const {trackingCode, setTrackingCode} = useContext(searchContext)
+  const [trackingCode, setTrackingCode] = useContext(searchContext)
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
     try {

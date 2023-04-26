@@ -20,7 +20,7 @@ import { searchContext } from "./Context/searchContext";
 
 function App() {
   const [loading, setLoading] = useState(false)
-  const {trackingCode, setTrackingCode} = useState()
+  const [trackingCode, setTrackingCode] = useState(null)
 
   useEffect(() => {
     setLoading(true)
@@ -30,8 +30,8 @@ function App() {
   }, [])
   return (
     <div>
-      <searchContext.Provider value={[trackingCode, setTrackingCode]}>
       <Router>
+      <searchContext.Provider value={[trackingCode, setTrackingCode]}>
         <div>
           {loading? <div className="preloader">
                     <img src={loaderImage} alt="loader" className="loader"/>
@@ -84,8 +84,9 @@ function App() {
                     <img src={loaderImage} alt="loader" className="loader"/>
                 </div> :  <div><Footer/></div>}
         </div>
+        </searchContext.Provider>
       </Router>
-      </searchContext.Provider>
+      
     </div>
   );
 }
