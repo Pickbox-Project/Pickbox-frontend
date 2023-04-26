@@ -8,6 +8,7 @@ const ContactUs = () => {
   const messageRef = useRef();
   const contactBtn = useRef();
   const [messageApi, contextHolder] = message.useMessage();
+  const [api, secondContextHolder] = notification.useNotification()
   const handleSubmitContactForm = async (e) => {
     e.preventDefault();
     if (
@@ -38,10 +39,13 @@ const ContactUs = () => {
         );
         console.log(contactRequest);
         if (contactRequest.status === 200) {
-          messageApi.open({
-            type: "success",
-            content: `${contactRequest.data.message}`,
-          });
+          const openNotification = (placement) =>{
+            api.success({
+              message: `Successfully Done`,
+              description: `${contactRequest.data.message}`,placement
+            })
+          }
+          openNotification('bottomRight')
           contactBtn.current.innerHTML = "Send Message";
         }
       } catch (error) {
@@ -78,6 +82,7 @@ const ContactUs = () => {
           placeholder="Write your message..."
         ></textarea>
         {contextHolder}
+        {secondContextHolder}
         <button
           type="submit"
           onClick={handleSubmitContactForm}
