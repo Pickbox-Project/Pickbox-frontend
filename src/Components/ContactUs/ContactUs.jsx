@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./ContactUs.css";
+import { AiOutlineSmile } from "react-icons/ai";
 import { message, notification } from "antd";
 import axios from "axios";
 const ContactUs = () => {
@@ -48,6 +49,8 @@ const ContactUs = () => {
               message: `Successfully Done`,
               description: `${contactRequest.data.message}`,
               placement,
+              icon: (<AiOutlineSmile 
+                style={{color: '#ff6600'}}/>)
             });
           };
           openNotification("bottomRight");
