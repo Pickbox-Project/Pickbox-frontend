@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import trackingWaiting from "../../Assets/images/trackingWaiting.png";
@@ -7,11 +7,19 @@ import "./TrackingWaiting.css";
 import { searchContext } from "../../Context/searchContext";
 
 const TrackingWaiting = () => {
-  const { trackingCode, setTrackingCode } = useContext(searchContext);
+  const [trackingCode, setTrackingCode] = useContext(searchContext);
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate("/more-details");
   };
+
+  useEffect(() => {
+    if (trackingCode) {
+      console.log(trackingCode);
+    } else {
+      navigate("/tracking");
+    }
+  }, []);
   return (
     <div className="tracking-container">
       <div className="tracking-text">
