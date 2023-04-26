@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./ContactUs.css";
-import { message } from "antd";
+import { message, notification } from "antd";
 import axios from "axios";
 const ContactUs = () => {
   const nameRef = useRef();
