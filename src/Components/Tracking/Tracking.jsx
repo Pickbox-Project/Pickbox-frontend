@@ -1,4 +1,4 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef, useContext, useState } from "react";
 import "./Tracking.css";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -6,18 +6,20 @@ import entertrackingNumberImage from "../../Assets/images/enter-tracking number.
 import trackingMobile from "../../Assets/images/tracking-default-mobile.png";
 import axios from "axios";
 import { searchContext } from "../../Context/searchContext";
+import { BeatLoader } from "react-spinners";
 
 const Tracking = () => {
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
+  const [loading, setLoading] = useState(false);
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
     localStorage.setItem("TrackingID", searchValue);
     let storedTrackingID = localStorage.getItem("TrackingID");
     try {
-      awaitTextRef.current.innerHTML = "Searching...";
+      setLoading(true);
       const getTrackingdata = await axios.get(
         `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
       );
@@ -36,7 +38,7 @@ const Tracking = () => {
         setTrackingCode(storedTrackingID);
         navigate("/tracking-delivered");
       }
-      awaitTextRef.current.innerHTML = "";
+      setLoading(false);
       console.log(getTrackingdata);
     } catch (e) {
       console.error(e);
@@ -51,7 +53,11 @@ const Tracking = () => {
       <div className="tracking-input">
         <AiOutlineSearch className="search-icon" onClick={getTrackingResult} />
         <input type="search" placeholder="Search" ref={searchRef} />
-        <p className="await-result" ref={awaitTextRef}></p>
+        {loading ? (
+          <BeatLoader color="#ff6600" className="search-loading" />
+        ) : (
+          ""
+        )}
       </div>
       <div className="tracking-result">
         <img
