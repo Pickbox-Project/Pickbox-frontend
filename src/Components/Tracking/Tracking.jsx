@@ -12,7 +12,6 @@ const Tracking = () => {
   const navigate = useNavigate();
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
-
     try {
       awaitTextRef.current.innerHTML = "Searching...";
       const getTrackingdata = await axios.get(
@@ -22,11 +21,9 @@ const Tracking = () => {
         navigate("/tracking-error");
       } else if (getTrackingdata.data.data.trackingStatus === 1) {
         navigate("/tracking-waiting");
-      }
-      else if (getTrackingdata.data.data.trackingStatus === 2) {
+      } else if (getTrackingdata.data.data.trackingStatus === 2) {
         navigate("/tracking-in-transit");
-      }
-      else if (getTrackingdata.data.data.trackingStatus === 3) {
+      } else if (getTrackingdata.data.data.trackingStatus === 3) {
         navigate("/tracking-delivered");
       }
       awaitTextRef.current.innerHTML = "";
