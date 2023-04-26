@@ -21,7 +21,7 @@ const MoreDetails = () => {
         <div className="more-details-customer-info">
           <h4 className="main-text">Tracking details</h4>
           <h5>
-            Tracking details: <span>XXXXXXXXXX1234</span>
+            Tracking Number: <span>{trackingCode}</span>
           </h5>
           <h5>
             Status: <span className="result">In transit</span>
