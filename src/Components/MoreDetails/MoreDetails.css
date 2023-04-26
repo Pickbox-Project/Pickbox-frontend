@@ -116,3 +116,8 @@
 .secondary-button:hover {
   cursor: pointer;
 }
+@media(max-width: 600px){
+    .more-details-container{
+        padding: 20px;
+    }
+}
