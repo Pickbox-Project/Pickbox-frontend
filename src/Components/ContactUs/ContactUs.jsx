@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./ContactUs.css";
-import { message } from "antd";
+import { AiOutlineSmile } from "react-icons/ai";
+import { message, notification } from "antd";
 import axios from "axios";
 const ContactUs = () => {
   const nameRef = useRef();
@@ -8,6 +9,7 @@ const ContactUs = () => {
   const messageRef = useRef();
   const contactBtn = useRef();
   const [messageApi, contextHolder] = message.useMessage();
+  const [api, secondContextHolder] = notification.useNotification();
   const handleSubmitContactForm = async (e) => {
     e.preventDefault();
     if (
@@ -15,10 +17,14 @@ const ContactUs = () => {
       emailRef.current.value === "" ||
       messageRef.current.value === ""
     ) {
-      messageApi.open({
-        type: "error",
-        content: "Kindly Input all Contact Details",
-      });
+      const openNotification = (placement) => {
+        api.error({
+          message: `Error!`,
+          description: `Kindly Input all Contact Details`,
+          placement,
+        });
+      };
+      openNotification("bottomRight");
     } else {
       try {
         contactBtn.current.innerHTML = "Kindly Wait...";
@@ -38,10 +44,16 @@ const ContactUs = () => {
         );
         console.log(contactRequest);
         if (contactRequest.status === 200) {
-          messageApi.open({
-            type: "success",
-            content: `${contactRequest.data.message}`,
-          });
+          const openNotification = (placement) => {
+            api.success({
+              message: `Successfully Done`,
+              description: `${contactRequest.data.message}`,
+              placement,
+              icon: (<AiOutlineSmile 
+                style={{color: '#ff6600'}}/>)
+            });
+          };
+          openNotification("bottomRight");
           contactBtn.current.innerHTML = "Send Message";
         }
       } catch (error) {
@@ -78,6 +90,7 @@ const ContactUs = () => {
           placeholder="Write your message..."
         ></textarea>
         {contextHolder}
+        {secondContextHolder}
         <button
           type="submit"
           onClick={handleSubmitContactForm}

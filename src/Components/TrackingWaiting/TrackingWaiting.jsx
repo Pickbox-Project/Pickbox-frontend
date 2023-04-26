@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import trackingWaiting from "../../Assets/images/trackingWaiting.png";
 import trackingWaitingMobile from "../../Assets/images/trackingWaitingMobile.png";
 import "./TrackingWaiting.css";
+import { searchContext } from "../../Context/searchContext";
 
 const TrackingWaiting = () => {
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate("/more-details");
   };
+  useEffect(() => {
+    let storedTrackingID = localStorage.getItem("TrackingID");
+    if (storedTrackingID) {
+      console.log(storedTrackingID);
+    } else {
+      navigate("/tracking");
+    }
+  }, []);
   return (
     <div className="tracking-container">
       <div className="tracking-text">
