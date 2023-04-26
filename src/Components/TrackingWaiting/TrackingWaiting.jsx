@@ -12,7 +12,6 @@ const TrackingWaiting = () => {
   const handleNavigate = () => {
     navigate("/more-details");
   };
-
   useEffect(() => {
     if (trackingCode) {
       console.log(trackingCode);
