@@ -16,9 +16,11 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import loaderImage from "./Assets/images/preloader.png"
 import pickboxLogo from "./Assets/images/pickbox logo transparent.png"
 import TrackingError from "./Components/TrackingError/TrackingError";
+import { searchContext } from "./Context/searchContext";
 
 function App() {
   const [loading, setLoading] = useState(false)
+  const {trackingCode, setTrackingCode} = useState()
 
   useEffect(() => {
     setLoading(true)
@@ -53,6 +55,7 @@ function App() {
           <Route exact path="/contactus" element={loading ? <div className="preloader">
                     <img src={loaderImage} alt="loader" className="loader"/>
                 </div> : <Faqs/>}></Route>
+                <searchContext.Provider value={[trackingCode, setTrackingCode]}>
           <Route exact path="/tracking" element={<Tracking />}></Route>
           <Route exact path="/aboutus" element={loading ? <div className="preloader">
                     <img src={loaderImage} alt="loader" className="loader"/>
@@ -73,6 +76,7 @@ function App() {
             element={<TrackingDelivered />}
           ></Route>
           <Route exact path="/more-details" element={<MoreDetails />}></Route>
+          </searchContext.Provider>
           <Route exact path="/tracking-error" element={<TrackingError/>}></Route>
         </Routes>
         <div>
