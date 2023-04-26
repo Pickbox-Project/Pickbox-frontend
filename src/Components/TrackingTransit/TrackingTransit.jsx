@@ -8,13 +8,13 @@ import { searchContext } from "../../Context/searchContext";
 
 const TrackingTransit = () => {
   const navigate = useNavigate();
-  const [trackingCode, setTrackingCode] = useContext(searchContext);
   const handleNavigate = () => {
     navigate("/more-details");
   };
   useEffect(() => {
-    if (trackingCode) {
-      console.log(trackingCode);
+    let storedTrackingID = localStorage.getItem("TrackingID");
+    if (storedTrackingID) {
+      console.log(storedTrackingID);
     } else {
       navigate("/tracking");
     }

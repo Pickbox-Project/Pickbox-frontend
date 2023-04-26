@@ -13,9 +13,10 @@ const MoreDetails = () => {
   const [receiverName, setReceiverName] = useState("");
   const [receiverDestination, setReceiverDestination] = useState("");
   const [bookingPrice, setBookPrice] = useState(0);
+  const storedTrackingID = localStorage.getItem("TrackingID");
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
-      `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${trackingCode}`
+      `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${storedTrackingID}`
     );
     console.log(getTrackingdata.data);
     if (getTrackingdata.data.data.trackingStatus === 1) {
@@ -30,21 +31,17 @@ const MoreDetails = () => {
     setBookPrice(getTrackingdata.data.data.bookingPrice);
   };
   const handleNavigate = () => {
+    localStorage.removeItem("TrackingID");
     navigate("/tracking");
   };
   useEffect(() => {
-    if (trackingCode) {
+    if (storedTrackingID) {
+      console.log(storedTrackingID);
       getTrackingDetails();
     } else {
       navigate("/tracking");
     }
-  }, [
-    trackingCode,
-    bookStatus,
-    receiverName,
-    receiverDestination,
-    bookingPrice,
-  ]);
+  }, [bookStatus, receiverName, receiverDestination, bookingPrice]);
   return (
     <div className="more-details-container">
       <div className="more-details-info">
@@ -52,7 +49,7 @@ const MoreDetails = () => {
           <AiOutlineArrowLeft className="arrow-left" onClick={handleNavigate} />
           <h4 className="main-text">Tracking details</h4>
           <h5>
-            Tracking Number: <span>{trackingCode}</span>
+            Tracking Number: <span>{storedTrackingID}</span>
           </h5>
           <h5>
             Status: <span className="result">{bookStatus}</span>

@@ -7,14 +7,14 @@ import "./TrackingWaiting.css";
 import { searchContext } from "../../Context/searchContext";
 
 const TrackingWaiting = () => {
-  const [trackingCode, setTrackingCode] = useContext(searchContext);
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate("/more-details");
   };
   useEffect(() => {
-    if (trackingCode) {
-      console.log(trackingCode);
+    let storedTrackingID = localStorage.getItem("TrackingID");
+    if (storedTrackingID) {
+      console.log(storedTrackingID);
     } else {
       navigate("/tracking");
     }

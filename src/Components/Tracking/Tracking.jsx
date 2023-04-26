@@ -1,4 +1,4 @@
-import React, { useRef ,useContext} from "react";
+import React, { useRef, useContext } from "react";
 import "./Tracking.css";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -11,9 +11,11 @@ const Tracking = () => {
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
-  const [trackingCode, setTrackingCode] = useContext(searchContext)
+  const [trackingCode, setTrackingCode] = useContext(searchContext);
   const getTrackingResult = async () => {
     const searchValue = searchRef.current.value;
+    localStorage.setItem("TrackingID", searchValue);
+    let storedTrackingID = localStorage.getItem("TrackingID");
     try {
       awaitTextRef.current.innerHTML = "Searching...";
       const getTrackingdata = await axios.get(
@@ -22,13 +24,16 @@ const Tracking = () => {
       if (getTrackingdata.data.succeeded === false) {
         navigate("/tracking-error");
       } else if (getTrackingdata.data.data.trackingStatus === 1) {
-        setTrackingCode(searchValue)
+        storedTrackingID = trackingCode;
+        setTrackingCode(storedTrackingID);
         navigate("/tracking-waiting");
       } else if (getTrackingdata.data.data.trackingStatus === 2) {
-        setTrackingCode(searchValue)
+        storedTrackingID = trackingCode;
+        setTrackingCode(storedTrackingID);
         navigate("/tracking-in-transit");
       } else if (getTrackingdata.data.data.trackingStatus === 3) {
-        setTrackingCode(searchValue)
+        storedTrackingID = trackingCode;
+        setTrackingCode(storedTrackingID);
         navigate("/tracking-delivered");
       }
       awaitTextRef.current.innerHTML = "";
