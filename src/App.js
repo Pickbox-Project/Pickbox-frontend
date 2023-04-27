@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import NavBar from "./Components/NavBar/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import HeroPage from "./Components/HeroPage/HeroPage";
 import Steps from "./Components/Steps/Steps";
 import Solution from "./Components/Solution/Solution";
@@ -14,6 +14,7 @@ import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
 import TrackingDelivered from "./Components/TrackingDelivered/TrackingDelivered";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import loaderImage from "./Assets/images/preloader.png"
+import ScrollToTop from "./Components/ScrollToTop";
 import pickboxLogo from "./Assets/images/pickbox logo transparent.png"
 import TrackingError from "./Components/TrackingError/TrackingError";
 import { searchContext } from "./Context/searchContext";
@@ -21,7 +22,6 @@ import { searchContext } from "./Context/searchContext";
 function App() {
   const [loading, setLoading] = useState(false)
   const [trackingCode, setTrackingCode] = useState(null)
-
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
@@ -31,6 +31,7 @@ function App() {
   return (
     <div>
       <Router>
+      <ScrollToTop/>
       <searchContext.Provider value={[trackingCode, setTrackingCode]}>
         <div>
           {loading? <div className="preloader">
