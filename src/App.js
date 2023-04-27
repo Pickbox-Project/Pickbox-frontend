@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import NavBar from "./Components/NavBar/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import HeroPage from "./Components/HeroPage/HeroPage";
 import Steps from "./Components/Steps/Steps";
 import Solution from "./Components/Solution/Solution";
@@ -21,9 +21,7 @@ import { searchContext } from "./Context/searchContext";
 function App() {
   const [loading, setLoading] = useState(false)
   const [trackingCode, setTrackingCode] = useState(null)
-
   useEffect(() => {
-    window.scrollTo(0, 0)
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
