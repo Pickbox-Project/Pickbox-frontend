@@ -14,6 +14,7 @@ import TrackingTransit from "./Components/TrackingTransit/TrackingTransit";
 import TrackingDelivered from "./Components/TrackingDelivered/TrackingDelivered";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import loaderImage from "./Assets/images/preloader.png"
+import ScrollToTop from "./Components/ScrollToTop";
 import pickboxLogo from "./Assets/images/pickbox logo transparent.png"
 import TrackingError from "./Components/TrackingError/TrackingError";
 import { searchContext } from "./Context/searchContext";
@@ -30,6 +31,7 @@ function App() {
   return (
     <div>
       <Router>
+      <ScrollToTop/>
       <searchContext.Provider value={[trackingCode, setTrackingCode]}>
         <div>
           {loading? <div className="preloader">
