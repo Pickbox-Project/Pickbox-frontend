@@ -39,6 +39,10 @@
   margin-bottom: 20px;
 }
 
+.arrow-left:hover {
+  cursor: pointer;
+}
+
 .more-details-customer-info .sub-main-text {
   font-size: 22px;
   font-family: "DM Sans";
