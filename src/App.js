@@ -23,6 +23,7 @@ function App() {
   const [trackingCode, setTrackingCode] = useState(null)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
