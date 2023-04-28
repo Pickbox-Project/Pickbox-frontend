@@ -41,6 +41,7 @@
 
 .contact-form > input:focus {
   outline: none;
+  background: #FFF;
   border: 1px solid #ff6600;
 }
 
