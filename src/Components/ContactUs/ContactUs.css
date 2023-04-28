@@ -37,10 +37,13 @@
   border-radius: 4px;
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
+  transition: 0.4s ease-in;
 }
 
 .contact-form > input:focus {
   outline: none;
+  background: #fff;
+  border: 1px solid #ff6600;
 }
 
 .contact-form > input::placeholder {
