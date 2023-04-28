@@ -41,6 +41,7 @@
 
 .contact-form > input:focus {
   outline: none;
+  border: 1px solid #ff6600;
 }
 
 .contact-form > input::placeholder {
