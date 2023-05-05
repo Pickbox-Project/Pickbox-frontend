@@ -9,6 +9,7 @@ import { searchContext } from "../../Context/searchContext";
 import { BeatLoader } from "react-spinners";
 
 const Tracking = () => {
+  const errorRef = useRef();
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
@@ -18,6 +19,9 @@ const Tracking = () => {
     const searchValue = searchRef.current.value;
     localStorage.setItem("TrackingID", searchValue);
     let storedTrackingID = localStorage.getItem("TrackingID");
+    if (searchRef.current.value === "") {
+      errorRef.innerHTML = "Kindly Input your Tracking ID";
+    }
     try {
       setLoading(true);
       const getTrackingdata = await axios.get(
@@ -52,7 +56,10 @@ const Tracking = () => {
       </div>
       <div className="tracking-input">
         <input type="search" placeholder="Search" ref={searchRef} />
-        <button className="search-button" onClick={getTrackingResult} ><AiOutlineSearch/> Search</button>
+        <button className="search-button" onClick={getTrackingResult}>
+          <AiOutlineSearch /> Search
+        </button>
+        <p className="Error" ref={errorRef}></p>
         {loading ? (
           <BeatLoader color="#ff6600" className="search-loading" />
         ) : (
