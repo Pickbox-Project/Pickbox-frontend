@@ -53,6 +53,7 @@ const Tracking = () => {
       <div className="tracking-input">
         <AiOutlineSearch className="search-icon" onClick={getTrackingResult} />
         <input type="search" placeholder="Search" ref={searchRef} />
+        <button className="search-button"><AiOutlineSearch/> Search</button>
         {loading ? (
           <BeatLoader color="#ff6600" className="search-loading" />
         ) : (
