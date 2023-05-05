@@ -28,14 +28,26 @@
 .tracking-input > input {
   width: 350px;
   height: 40px;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 10px;
   position: relative;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 .search-button {
+  display: block;
   height: 40px;
+  width: 350px;
+  padding: 7px;
+  margin-top: 10px;
+  border: none;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  cursor: pointer;
 }
 
 .search-icon {
@@ -81,5 +93,9 @@
   }
   .tracking-result .trackingImage {
     display: none;
+  }
+  .search-button {
+    width: 350px;
+    margin: 15px auto;
   }
 }
