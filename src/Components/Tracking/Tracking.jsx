@@ -20,32 +20,34 @@ const Tracking = () => {
     localStorage.setItem("TrackingID", searchValue);
     let storedTrackingID = localStorage.getItem("TrackingID");
     if (searchRef.current.value === "") {
-      errorRef.innerHTML = "Kindly Input your Tracking ID";
-    }
-    try {
-      setLoading(true);
-      const getTrackingdata = await axios.get(
-        `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
-      );
-      if (getTrackingdata.data.succeeded === false) {
-        navigate("/tracking-error");
-      } else if (getTrackingdata.data.data.trackingStatus === 1) {
-        storedTrackingID = trackingCode;
-        setTrackingCode(storedTrackingID);
-        navigate("/tracking-waiting");
-      } else if (getTrackingdata.data.data.trackingStatus === 2) {
-        storedTrackingID = trackingCode;
-        setTrackingCode(storedTrackingID);
-        navigate("/tracking-in-transit");
-      } else if (getTrackingdata.data.data.trackingStatus === 3) {
-        storedTrackingID = trackingCode;
-        setTrackingCode(storedTrackingID);
-        navigate("/tracking-delivered");
-      }
+      errorRef.current.innerHTML = "Kindly Input your Tracking ID";
       setLoading(false);
-      console.log(getTrackingdata);
-    } catch (e) {
-      console.error(e);
+    } else {
+      try {
+        setLoading(true);
+        const getTrackingdata = await axios.get(
+          `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
+        );
+        if (getTrackingdata.data.succeeded === false) {
+          navigate("/tracking-error");
+        } else if (getTrackingdata.data.data.trackingStatus === 1) {
+          storedTrackingID = trackingCode;
+          setTrackingCode(storedTrackingID);
+          navigate("/tracking-waiting");
+        } else if (getTrackingdata.data.data.trackingStatus === 2) {
+          storedTrackingID = trackingCode;
+          setTrackingCode(storedTrackingID);
+          navigate("/tracking-in-transit");
+        } else if (getTrackingdata.data.data.trackingStatus === 3) {
+          storedTrackingID = trackingCode;
+          setTrackingCode(storedTrackingID);
+          navigate("/tracking-delivered");
+        }
+        setLoading(false);
+        console.log(getTrackingdata);
+      } catch (e) {
+        console.error(e);
+      }
     }
   };
   return (
