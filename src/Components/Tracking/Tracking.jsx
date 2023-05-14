@@ -26,7 +26,7 @@ const Tracking = () => {
       try {
         setLoading(true);
         const getTrackingdata = await axios.get(
-          `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
+          `http://ifeoluwaapickbox-001-site1.atempurl.com/api/Tracking/View-TrackingInformation?trackingCode=${searchValue}`
         );
         if (getTrackingdata.data.succeeded === false) {
           navigate("/tracking-error");
