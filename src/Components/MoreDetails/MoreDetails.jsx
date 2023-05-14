@@ -16,7 +16,7 @@ const MoreDetails = () => {
   const storedTrackingID = localStorage.getItem("TrackingID");
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
-      `https://pickbox.azurewebsites.net/api/Tracking/View-TrackingInformation?trackingCode=${storedTrackingID}`
+      `http://ifeoluwaapickbox-001-site1.atempurl.com/api/Tracking/View-TrackingInformation?trackingCode=${storedTrackingID}`
     );
     console.log(getTrackingdata.data);
     if (getTrackingdata.data.data.trackingStatus === 1) {
