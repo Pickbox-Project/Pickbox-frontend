@@ -12,6 +12,7 @@ const MoreDetails = () => {
   const [bookStatus, setBookStatus] = useState("");
   const [receiverName, setReceiverName] = useState("");
   const [receiverDestination, setReceiverDestination] = useState("");
+  const [productImage, setProductImage] = useState(null);
   const [bookingPrice, setBookPrice] = useState(0);
   const storedTrackingID = localStorage.getItem("TrackingID");
   const getTrackingDetails = async () => {
@@ -29,6 +30,7 @@ const MoreDetails = () => {
     setReceiverName(getTrackingdata.data.data.receiverName);
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
+    console.log(getTrackingdata.data.data.itemImage);
   };
   const handleNavigate = () => {
     localStorage.removeItem("TrackingID");
