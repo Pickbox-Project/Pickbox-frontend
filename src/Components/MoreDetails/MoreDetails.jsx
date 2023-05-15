@@ -30,6 +30,7 @@ const MoreDetails = () => {
     setReceiverName(getTrackingdata.data.data.receiverName);
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
+    console.log(getTrackingdata.data.data.itemImage);
   };
   const handleNavigate = () => {
     localStorage.removeItem("TrackingID");
