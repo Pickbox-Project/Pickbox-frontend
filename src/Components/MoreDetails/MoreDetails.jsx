@@ -31,6 +31,7 @@ const MoreDetails = () => {
     setReceiverName(getTrackingdata.data.data.receiverName);
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
+    setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate)
     console.log(getTrackingdata.data.data.itemImage);
   };
   const handleNavigate = () => {
@@ -77,7 +78,8 @@ const MoreDetails = () => {
             <label htmlFor="delivery-time">Expected delivery time</label>
             <input
               type="text"
-              placeholder="13th August, 2022 by 15:30pm"
+              value={expectedDeliveryDate}
+              readOnly
               id="delivery-time"
             />
           </form>
