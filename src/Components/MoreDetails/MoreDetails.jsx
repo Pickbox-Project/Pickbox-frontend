@@ -83,7 +83,7 @@ const MoreDetails = () => {
               id="delivery-time"
             />
           </form>
-          <h4 className="sub-main-text">Agent's number</h4>
+          <h4 className="sub-main-text">Receiver's number</h4>
           <a href="tel:0803354XXXX" className="agent-number">
             {" "}
             <AiFillPhone className="agent-icon" />
