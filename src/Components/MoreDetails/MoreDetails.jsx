@@ -32,6 +32,7 @@ const MoreDetails = () => {
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
     setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate)
+    setProductImage(getTrackingdata.data.data.itemImage[0])
     console.log(getTrackingdata.data.data.itemImage);
   };
   const handleNavigate = () => {
@@ -95,7 +96,7 @@ const MoreDetails = () => {
           </div>
         </div>
         <div className="delivering-image">
-          <p>Image</p>
+         <img src={productImage} alt="" />
         </div>
       </div>
     </div>
