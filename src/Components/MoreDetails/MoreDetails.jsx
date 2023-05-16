@@ -34,6 +34,7 @@ const MoreDetails = () => {
     setBookPrice(getTrackingdata.data.data.bookingPrice);
     setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate);
     setProductImage(getTrackingdata.data.data.itemImage[0]);
+    setReceiverPhone(getTrackingdata.data.data.receiverPhoneNumber);
   };
   const handleNavigate = () => {
     localStorage.removeItem("TrackingID");
