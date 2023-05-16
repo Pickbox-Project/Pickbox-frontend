@@ -13,7 +13,9 @@ const MoreDetails = () => {
   const [receiverName, setReceiverName] = useState("");
   const [receiverDestination, setReceiverDestination] = useState("");
   const [productImage, setProductImage] = useState(null);
+  const [expectedDeliveryDate, setExpectedDeliveryDate] = useState("");
   const [bookingPrice, setBookPrice] = useState(0);
+  const [receiverPhone, setReceiverPhone] = useState(0);
   const storedTrackingID = localStorage.getItem("TrackingID");
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
@@ -30,7 +32,9 @@ const MoreDetails = () => {
     setReceiverName(getTrackingdata.data.data.receiverName);
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
-    console.log(getTrackingdata.data.data.itemImage);
+    setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate);
+    setProductImage(getTrackingdata.data.data.itemImage[0]);
+    setReceiverPhone(getTrackingdata.data.data.receiverPhoneNumber);
   };
   const handleNavigate = () => {
     localStorage.removeItem("TrackingID");
@@ -76,15 +80,16 @@ const MoreDetails = () => {
             <label htmlFor="delivery-time">Expected delivery time</label>
             <input
               type="text"
-              placeholder="13th August, 2022 by 15:30pm"
+              value={expectedDeliveryDate}
+              readOnly
               id="delivery-time"
             />
           </form>
-          <h4 className="sub-main-text">Agent's number</h4>
-          <a href="tel:0803354XXXX" className="agent-number">
+          <h4 className="sub-main-text">Receiver's number</h4>
+          <a href={`tel:${receiverPhone}`} className="agent-number">
             {" "}
             <AiFillPhone className="agent-icon" />
-            0803354XXXX
+            {receiverPhone}
           </a>
           <div className="send-download-button">
             <button className="primary-button">Send ID to receiver</button>
@@ -92,7 +97,7 @@ const MoreDetails = () => {
           </div>
         </div>
         <div className="delivering-image">
-          <p>Image</p>
+          <img src={productImage} alt="Product To Deliver" />
         </div>
       </div>
     </div>
