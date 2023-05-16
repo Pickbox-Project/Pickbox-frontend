@@ -86,10 +86,10 @@ const MoreDetails = () => {
             />
           </form>
           <h4 className="sub-main-text">Receiver's number</h4>
-          <a href="tel:0803354XXXX" className="agent-number">
+          <a href={`tel:${receiverPhone}`} className="agent-number">
             {" "}
             <AiFillPhone className="agent-icon" />
-            0803354XXXX
+            {receiverPhone}
           </a>
           <div className="send-download-button">
             <button className="primary-button">Send ID to receiver</button>
