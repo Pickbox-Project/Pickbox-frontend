@@ -33,7 +33,6 @@ const MoreDetails = () => {
     setBookPrice(getTrackingdata.data.data.bookingPrice);
     setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate);
     setProductImage(getTrackingdata.data.data.itemImage[0]);
-    console.log(getTrackingdata.data.data.itemImage);
   };
   const handleNavigate = () => {
     localStorage.removeItem("TrackingID");
