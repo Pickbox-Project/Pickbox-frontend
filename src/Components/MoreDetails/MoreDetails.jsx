@@ -13,7 +13,7 @@ const MoreDetails = () => {
   const [receiverName, setReceiverName] = useState("");
   const [receiverDestination, setReceiverDestination] = useState("");
   const [productImage, setProductImage] = useState(null);
-  const [expectedDeliveryDate, setExpectedDeliveryDate] = useState("")
+  const [expectedDeliveryDate, setExpectedDeliveryDate] = useState("");
   const [bookingPrice, setBookPrice] = useState(0);
   const storedTrackingID = localStorage.getItem("TrackingID");
   const getTrackingDetails = async () => {
@@ -31,8 +31,8 @@ const MoreDetails = () => {
     setReceiverName(getTrackingdata.data.data.receiverName);
     setReceiverDestination(getTrackingdata.data.data.receiverLocation);
     setBookPrice(getTrackingdata.data.data.bookingPrice);
-    setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate)
-    setProductImage(getTrackingdata.data.data.itemImage[0])
+    setExpectedDeliveryDate(getTrackingdata.data.data.expectedDeliveryDate);
+    setProductImage(getTrackingdata.data.data.itemImage[0]);
     console.log(getTrackingdata.data.data.itemImage);
   };
   const handleNavigate = () => {
@@ -96,7 +96,7 @@ const MoreDetails = () => {
           </div>
         </div>
         <div className="delivering-image">
-         <img src={productImage} alt="" />
+          <img src={productImage} alt="Product To Deliver" />
         </div>
       </div>
     </div>
