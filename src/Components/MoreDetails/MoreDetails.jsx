@@ -15,6 +15,7 @@ const MoreDetails = () => {
   const [productImage, setProductImage] = useState(null);
   const [expectedDeliveryDate, setExpectedDeliveryDate] = useState("");
   const [bookingPrice, setBookPrice] = useState(0);
+  const [receiverPhone, setReceiverPhone] = useState(0);
   const storedTrackingID = localStorage.getItem("TrackingID");
   const getTrackingDetails = async () => {
     const getTrackingdata = await axios.get(
