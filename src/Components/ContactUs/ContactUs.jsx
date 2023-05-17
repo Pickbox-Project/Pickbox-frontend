@@ -29,7 +29,7 @@ const ContactUs = () => {
       try {
         contactBtn.current.innerHTML = "Kindly Wait...";
         const contactRequest = await axios.post(
-          `https://pickbox.azurewebsites.net/api/ContactForm/Submit-contactForm`,
+          `http://ifeoluwaapickbox-001-site1.atempurl.com/api/ContactForm/Submit-contactForm`,
           {
             Name: `${nameRef.current.value}`,
             Email: `${emailRef.current.value}`,
