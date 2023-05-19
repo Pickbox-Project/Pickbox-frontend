@@ -5,6 +5,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import entertrackingNumberImage from "../../Assets/images/enter-tracking number.png";
 import trackingMobile from "../../Assets/images/tracking-default-mobile.png";
 import axios from "axios";
+import { message, notification } from "antd";
 import { searchContext } from "../../Context/searchContext";
 import { BeatLoader } from "react-spinners";
 
@@ -13,6 +14,7 @@ const Tracking = () => {
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
+  const [api, secondContextHolder] = notification.useNotification();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
   const [loading, setLoading] = useState(false);
   const getTrackingResult = async () => {
@@ -46,7 +48,15 @@ const Tracking = () => {
         setLoading(false);
         console.log(getTrackingdata);
       } catch (e) {
-        setLoading(false)
+        setLoading(false);
+        const openNotification = (placement) => {
+          api.error({
+            message: `Error!`,
+            description: `Kindly Input all Contact Details`,
+            placement,
+          });
+        };
+        openNotification("topRight");
         console.error(e);
       }
     }
@@ -59,6 +69,7 @@ const Tracking = () => {
       </div>
       <div className="tracking-input">
         <input type="search" placeholder="Search" ref={searchRef} />
+        {secondContextHolder}
         <button className="search-button" onClick={getTrackingResult}>
           <AiOutlineSearch /> Search
         </button>
