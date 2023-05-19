@@ -52,7 +52,7 @@ const Tracking = () => {
         const openNotification = (placement) => {
           api.error({
             message: `Error!`,
-            description: `Kindly Input all Contact Details`,
+            description: `Kindly Contact Support`,
             placement,
           });
         };
