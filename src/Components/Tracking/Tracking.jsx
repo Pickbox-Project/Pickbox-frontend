@@ -56,6 +56,7 @@ const Tracking = () => {
             placement,
           });
         };
+        openNotification("topRight");
         console.error(e);
       }
     }
