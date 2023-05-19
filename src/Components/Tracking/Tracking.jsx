@@ -49,6 +49,13 @@ const Tracking = () => {
         console.log(getTrackingdata);
       } catch (e) {
         setLoading(false);
+        const openNotification = (placement) => {
+          api.error({
+            message: `Error!`,
+            description: `Kindly Input all Contact Details`,
+            placement,
+          });
+        };
         console.error(e);
       }
     }
