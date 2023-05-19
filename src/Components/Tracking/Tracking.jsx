@@ -46,6 +46,7 @@ const Tracking = () => {
         setLoading(false);
         console.log(getTrackingdata);
       } catch (e) {
+        setLoading(false)
         console.error(e);
       }
     }
