@@ -14,6 +14,7 @@ const Tracking = () => {
   const searchRef = useRef();
   const awaitTextRef = useRef();
   const navigate = useNavigate();
+  const [api, secondContextHolder] = notification.useNotification();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
   const [loading, setLoading] = useState(false);
   const getTrackingResult = async () => {
