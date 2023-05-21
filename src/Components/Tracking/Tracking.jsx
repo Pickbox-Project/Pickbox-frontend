@@ -12,7 +12,6 @@ import { BeatLoader } from "react-spinners";
 const Tracking = () => {
   const errorRef = useRef();
   const searchRef = useRef();
-  const awaitTextRef = useRef();
   const navigate = useNavigate();
   const [api, secondContextHolder] = notification.useNotification();
   const [trackingCode, setTrackingCode] = useContext(searchContext);
