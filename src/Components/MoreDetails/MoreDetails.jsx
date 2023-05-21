@@ -8,7 +8,6 @@ import axios from "axios";
 
 const MoreDetails = () => {
   const navigate = useNavigate();
-  const [trackingCode, setTrackingCode] = useContext(searchContext);
   const [bookStatus, setBookStatus] = useState("");
   const [receiverName, setReceiverName] = useState("");
   const [receiverDestination, setReceiverDestination] = useState("");
