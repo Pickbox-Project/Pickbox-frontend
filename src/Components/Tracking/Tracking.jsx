@@ -5,7 +5,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import entertrackingNumberImage from "../../Assets/images/enter-tracking number.png";
 import trackingMobile from "../../Assets/images/tracking-default-mobile.png";
 import axios from "axios";
-import { message, notification } from "antd";
+import { notification } from "antd";
 import { searchContext } from "../../Context/searchContext";
 import { BeatLoader } from "react-spinners";
 
